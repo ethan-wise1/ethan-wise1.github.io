@@ -13,15 +13,16 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
-email:
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: username
-github_username: username
-minimal_mistakes_skin: default
+title: "Ethan Wise"
+description: "Software Developer | Hackathons, Projects, and Experiments"
+url: "https://ethan-wise1.github.io"
+baseurl: "" # Leave this blank for GitHub Pages
+
+author:
+  name: "Ethan Wise"
+  email: "ethanwise7@gmail.com"
+  github: ethan-wise1
+  linkedin: ethanwise
 search: true
 
 # Build settings
