@@ -202,3 +202,5 @@ tag_archive:
   
 sass:
   style: compressed
+assets:
+  css: "/assets/css/main.scss"
