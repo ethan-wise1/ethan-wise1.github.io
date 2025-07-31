@@ -64,8 +64,14 @@ html, body {
   color: #fff !important;
 }
 
-.page__header a[itemprop="url"] {
+/* Force white, bold page title for linked titles */
+.page__title a[itemprop="url"] {
   color: #ffffff !important;
-  font-weight: 700 !important;
+  font-weight: 800 !important;
   text-decoration: none;
+}
+
+.page__title a[itemprop="url"]:hover {
+  color: #dddddd !important;
+  text-decoration: underline;
 }
