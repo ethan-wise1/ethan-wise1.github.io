@@ -6,7 +6,7 @@ This is the source code for my personal website and portfolio, built with [Jekyl
 
 ## ✨ About
 
-This site serves as a central hub to showcase projects I've worked on, reflect on my journey as a developer, and highlight my evolving interests in full-stack development, AI, and cybersecurity.
+This site serves as a central hub to showcase projects I've worked on, reflect on my journey as a developer, and highlight my evolving interests in full-stack development.
 
 ## 🛠️ Tech Stack
 
