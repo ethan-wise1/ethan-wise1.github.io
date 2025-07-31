@@ -1,6 +1,6 @@
 ---
-title: "Posts by Category"
-layout: categories
+title: "Projects"
+layout: Single
 permalink: /projects/
-author_profile: true
+author_profile: false
 ---
