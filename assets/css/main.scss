@@ -7,3 +7,10 @@ body {
   background-color: #121212 !important;
   color: #f5f5f5 !important;
 }
+.site-header,
+.navbar,
+.navbar-inner {
+  background-color: #121212 !important; /* same dark as body */
+  border-bottom: none !important;       /* remove bottom border */
+  box-shadow: none !important;           /* remove any shadow */
+}
