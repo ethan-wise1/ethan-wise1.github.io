@@ -1,16 +1,45 @@
 ---
 ---
 
-@import "minimal-mistakes"; // Imports default styles
+// Import Minimal Mistakes base styles
+@import "minimal-mistakes";
 
-body {
+// Global body styles for dark theme
+html, body {
   background-color: #121212 !important;
   color: #f5f5f5 !important;
 }
+
+// Remove white background and border from header container
+.site-header .container,
 .site-header,
-.navbar,
-.navbar-inner {
-  background-color: #121212 !important; /* same dark as body */
-  border-bottom: none !important;       /* remove bottom border */
-  box-shadow: none !important;           /* remove any shadow */
+.header-wrapper,
+.navbar-inner,
+.navbar {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: #eee !important;
+}
+
+// Style each nav link and site title with transparent white outline box
+.site-header .site-title,
+.site-header .nav-links li a,
+.navbar-nav > li > a {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 6px 12px;
+  margin: 4px;
+  border-radius: 6px;
+  color: #eee !important;
+  display: inline-block;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+// Hover effect for nav items and site title
+.site-header .site-title:hover,
+.site-header .nav-links li a:hover,
+.navbar-nav > li > a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.7);
+  color: #fff !important;
 }
