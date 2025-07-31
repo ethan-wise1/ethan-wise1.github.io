@@ -76,7 +76,10 @@ author:
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/"
 
-
+footer:
+  links: []
+  copyright:
+  show_powered_by: false
 
 defaults:
   # _posts
