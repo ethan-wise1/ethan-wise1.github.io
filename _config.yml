@@ -67,7 +67,7 @@ author:
       url: "/assets/My%20Resume.pdf"
     - label: "Email: ethanwise7@gmail"
       icon: "fas fa-fw fa-envelope"
-      #url: "mailto:ethanwise7@gmail.com"
+      url: "mailto:ethanwise7@gmail.com"
 
 
     
