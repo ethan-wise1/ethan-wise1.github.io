@@ -65,9 +65,9 @@ author:
     - label: "Resume"
       icon: "fas fa-fw fa-file-alt"
       url: "/assets/My%20Resume.pdf"
-    - label: "Email"
+    - label: "Email: ethanwise7@gmail"
       icon: "fas fa-fw fa-envelope"
-      url: "mailto:ethanwise7@gmail.com"
+      #url: "mailto:ethanwise7@gmail.com"
 
 
     
