@@ -1,6 +1,6 @@
 ---
-title: "Posts by Tag"
-permalink: /quotes/
-layout: tags
-author_profile: true
+title: "Principles & Perspective"
+permalink: /principles_perspective/
+layout: Single
+author_profile: false
 ---
