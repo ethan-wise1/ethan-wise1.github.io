@@ -23,7 +23,8 @@ html, body {
   padding: 6px 12px;
   margin-right: 12px;
   border-radius: 6px;
-  color: #eee !important;
+  color: #fff !important;          // <-- changed here
+  font-weight: 700 !important; 
   display: inline-block;
   transition: background-color 0.3s ease, border-color 0.3s ease;
   text-decoration: none;
