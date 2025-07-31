@@ -64,8 +64,8 @@ html, body {
   color: #fff !important;
 }
 
-.page__header h1.page__title {
+.page__header a[itemprop="url"] {
   color: #ffffff !important;
   font-weight: 700 !important;
-  text-transform: none !important;
+  text-decoration: none;
 }
