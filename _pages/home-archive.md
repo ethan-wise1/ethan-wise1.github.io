@@ -1,5 +1,4 @@
 ---
-title: "Home Page"
 permalink: /home/
 layout: single
 author_profile: true
