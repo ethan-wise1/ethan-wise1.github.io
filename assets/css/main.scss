@@ -64,7 +64,8 @@ html, body {
   color: #fff !important;
 }
 
-.page__title {
-  color: #ffffff !important;     // Bright white
-  font-weight: 700 !important;   // Bold
+.page__header h1.page__title {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  text-transform: none !important;
 }
