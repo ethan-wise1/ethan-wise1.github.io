@@ -1,6 +1,6 @@
 ---
 title: "Principles & Perspective"
-permalink: /principles_perspective/
+permalink: /Quotes/
 layout: Single
 author_profile: false
 ---
