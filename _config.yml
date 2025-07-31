@@ -205,3 +205,8 @@ sass:
 minimal_mistakes_skin: "dark"
 assets:
   css: "/assets/css/main.scss"
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
