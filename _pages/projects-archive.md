@@ -4,7 +4,6 @@ layout: single
 permalink: /projects/
 author_profile: false
 ---
-<h1>Projects</h1>
 
 <ul>
   {% for project in site.projects %}
