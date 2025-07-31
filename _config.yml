@@ -77,8 +77,11 @@ author:
       url: "https://instagram.com/"
 
 footer:
-  links: []
-  copyright:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/ethan-wise1"
+  copyright: "© 2025 Ethan Wise"
   show_powered_by: false
 
 defaults:
