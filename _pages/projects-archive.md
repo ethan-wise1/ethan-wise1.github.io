@@ -8,7 +8,14 @@ author_profile: false
 <ul>
   {% for project in site.projects %}
     <li style="margin-bottom: 2em;">
-      <h2><a href="{{ project.url }}">{{ project.title }}</a></h2>
+      <h2>
+        {% if project.link_url %}
+          <a href="{{ project.link_url }}">{{ project.title }}</a>
+        {% else %}
+          <span>{{ project.title }}</span>
+        {% endif %}
+      </h2>
+
       <p>{{ project.excerpt | strip_html | truncatewords: 30 }}</p>
 
       {% if project.github_url %}
@@ -33,3 +40,5 @@ author_profile: false
     </li>
   {% endfor %}
 </ul>
+le }}</span>
+{% endif %}
