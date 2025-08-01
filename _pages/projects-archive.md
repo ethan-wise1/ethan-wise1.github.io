@@ -31,7 +31,7 @@ author_profile: false
       {% endif %}
 
       {% if project.video %}
-        <p><a href="{{ project.video }}" target="_blank" rel="noopener noreferrer">Video: Click here</a></p>
+        <p><a href="{{ project.video }}" target="_blank" rel="noopener noreferrer">Video</a></p>
       {% endif %}
     </li>
   {% endfor %}
