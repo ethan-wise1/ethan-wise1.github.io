@@ -10,7 +10,7 @@ author_profile: false
     <li style="margin-bottom: 2em;">
       <h2>
         {% if project.link_url %}
-          <a href="{{ project.link_url }}">{{ project.title }}</a>
+          <a href="{{ project.link_url }}" target="_blank" rel="noopener noreferrer">{{ project.title }}</a>
         {% else %}
           <span>{{ project.title }}</span>
         {% endif %}
@@ -19,11 +19,11 @@ author_profile: false
       <p>{{ project.excerpt | strip_html | truncatewords: 30 }}</p>
 
       {% if project.github_url %}
-        <p><a href="{{ project.github_url }}" target="_blank">GitHub Repository</a></p>
+        <p><a href="{{ project.github_url }}" target="_blank" rel="noopener noreferrer">GitHub Repository</a></p>
       {% endif %}
 
       {% if project.zip_file %}
-        <p><a href="{{ project.zip_file }}" download>Download ZIP</a></p>
+        <p><a href="{{ project.zip_file }}" download target="_blank" rel="noopener noreferrer">Download ZIP</a></p>
       {% endif %}
 
       {% if project.image %}
