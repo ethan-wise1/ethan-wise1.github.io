@@ -31,11 +31,7 @@ author_profile: false
       {% endif %}
 
       {% if project.video %}
-        <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
-          <iframe src="{{ project.video | replace: 'watch?v=', 'embed/' }}" frameborder="0" allowfullscreen
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-          </iframe>
-        </div>
+        <p><a href="{{ project.video }}" target="_blank" rel="noopener noreferrer">Video: Click here</a></p>
       {% endif %}
     </li>
   {% endfor %}
