@@ -40,5 +40,3 @@ author_profile: false
     </li>
   {% endfor %}
 </ul>
-le }}</span>
-{% endif %}
