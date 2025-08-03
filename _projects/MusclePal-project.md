@@ -6,3 +6,5 @@ zip_file: false
 image: false
 video: /assets/images/MusclePal_Recording.mov
 ---
+
+This project was... 
