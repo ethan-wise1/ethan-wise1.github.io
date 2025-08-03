@@ -1,19 +1,19 @@
----
----
-
 @import "minimal-mistakes";
 
-// Global dark background and light text
+/* Global dark background and light text for entire page */
 html, body {
-  background-color: #121212 !important;
-  color: #f5f5f5 !important;
+  background-color: #000 !important;
+  color: #eee !important;
+  margin: 0; /* reset any default margin */
+  padding: 0;
 }
 
+/* Navigation bar styling */
 #site-nav.greedy-nav {
   background-color: #111 !important;
-  color: #fff;
-  border: none;
-  box-shadow: none;
+  color: #fff !important;
+  border: none !important;
+  box-shadow: none !important;
   padding: 10px 20px;
 }
 
@@ -21,30 +21,22 @@ html, body {
 #site-nav.greedy-nav a {
   color: #fff !important;
   font-weight: 700 !important;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
-// Remove any background or border from the nav container
-#site-nav.greedy-nav {
-  background-color: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  padding: 0;  // optional: remove extra padding if needed
-}
-
-// Style the site title link with outline box
+/* Site title link with subtle border */
 #site-nav > .site-title {
   border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 6px 12px;
   margin-right: 12px;
   border-radius: 6px;
-  color: #eee !important;          // <-- changed here
+  color: #eee !important;
   display: inline-block;
   transition: background-color 0.3s ease, border-color 0.3s ease;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
-// Style each nav menu link individually
+/* Nav menu links */
 #site-nav ul.visible-links li.masthead__menu-item > a {
   border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 6px 12px;
@@ -53,10 +45,10 @@ html, body {
   color: #eee !important;
   display: inline-block;
   transition: background-color 0.3s ease, border-color 0.3s ease;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
-// Hover effects for site title and nav links
+/* Hover effects for nav links */
 #site-nav > .site-title:hover,
 #site-nav ul.visible-links li.masthead__menu-item > a:hover {
   background-color: rgba(255, 255, 255, 0.1);
@@ -64,42 +56,43 @@ html, body {
   color: #fff !important;
 }
 
-/* Force white, bold page title for linked titles */
+/* Page title links */
 .page__title a {
-  color: #ffffff !important;
+  color: #fff !important;
   font-weight: 800 !important;
   text-decoration: none !important;
 }
 
 .page__title a:hover {
-  color: #dddddd !important;
+  color: #ddd !important;
   text-decoration: underline !important;
 }
 
-/* Mobile menu dropdown fix */
+/* Mobile dropdown menu background */
 .greedy-nav .hidden-links {
-  background-color: #1a1a1a !important;  /* dark background */
+  background-color: #1a1a1a !important;
   border-radius: 8px;
   padding: 10px 0;
 }
 
 .greedy-nav .hidden-links a {
-  color: #ffffff !important;
+  color: #fff !important;
   font-weight: 600;
   padding: 10px 16px;
   display: block;
 }
 
-/* Make fullwidth container stretch wider than the usual page content */
+/* Fullwidth container adjustments */
 .fullwidth-container {
-  max-width: 1200px;  /* Adjust width as you want */
-  width: 90vw;        /* Responsive width */
+  max-width: 1200px;
+  width: 90vw;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1em;
   padding-right: 1em;
 }
 
+/* Responsive tweaks for project list */
 @media (max-width: 768px) {
   ul > li {
     flex-direction: column !important;
@@ -111,5 +104,3 @@ html, body {
     margin: 0 !important;
   }
 }
-
-
