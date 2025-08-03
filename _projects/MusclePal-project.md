@@ -4,7 +4,7 @@ link_url: "https://docs.google.com/presentation/d/1ehb-TaOUky0krLPBnbc3V8vEHOhIG
 
 github_url: false
 zip_file: false
-image: false
+image: "/assets/images/MusclePal_Logo.png"
 video: /assets/images/MusclePal_Recording.mov
 ---
 
