@@ -33,3 +33,14 @@ author_profile: false
       <p>{{ project.excerpt | strip_html | truncatewords: 30 }}</p>
 
       {% if project.image %}
+      <img src="{{ project.image }}" alt="{{ project.title }} image" style="max-width: 100%; height: auto;">
+      {% endif %}
+
+      {% if project.video %}
+        <p><a href="{{ project.video }}" target="_blank" rel="noopener noreferrer">Video: App Walkthrough</a></p>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+
+  
