@@ -100,4 +100,16 @@ html, body {
   padding-right: 1em;
 }
 
+@media (max-width: 768px) {
+  ul > li {
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    text-align: left !important;
+  }
+  ul > li > div {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+
 
