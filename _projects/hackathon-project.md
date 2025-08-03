@@ -1,7 +1,7 @@
 ---
 title: Hackathon - AI-Powered Road Detection
 link_url: "https://docs.google.com/presentation/d/1BGFn_oXrwlDf-OvHS2T9gauOCG9QmoFb-5qt2SJNdCw/present"
-github_url: false
+github_url: "https://github.com/USDA-OCIO-EDMC/CSU-Hackathon2025/tree/Team-4"
 zip_file: false
 image: false
 video: false
