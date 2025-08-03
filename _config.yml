@@ -120,7 +120,7 @@ url: "https://ethan-wise1.github.io"
 baseurl: "" # Leave this blank for GitHub Pages
 
 
-search: true
+search: false
 
 # Build settings
 markdown: kramdown
