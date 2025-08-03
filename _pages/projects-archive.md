@@ -16,8 +16,7 @@ author_profile: false
         {% endif %}
       </h2>
 
-      <p>{{ project.excerpt | strip_html | truncatewords: 30 }}</p>
-
+      <!-- LINKS: moved up here -->
       {% if project.github_url %}
         <p><a href="{{ project.github_url }}" target="_blank" rel="noopener noreferrer">GitHub Repository</a></p>
       {% endif %}
@@ -26,13 +25,11 @@ author_profile: false
         <p><a href="{{ project.zip_file }}" download target="_blank" rel="noopener noreferrer">Download ZIP</a></p>
       {% endif %}
 
-      {% if project.image %}
-        <img src="{{ project.image }}" alt="{{ project.title }} image" style="max-width: 100%; height: auto;">
-      {% endif %}
-
       {% if project.video %}
         <p><a href="{{ project.video }}" target="_blank" rel="noopener noreferrer">Video: App Walkthrough</a></p>
       {% endif %}
-    </li>
-  {% endfor %}
-</ul>
+
+      <!-- DESCRIPTION: now below the links -->
+      <p>{{ project.excerpt | strip_html | truncatewords: 30 }}</p>
+
+      {% if project.image %}
