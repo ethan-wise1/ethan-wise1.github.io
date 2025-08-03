@@ -1,6 +1,6 @@
 ---
 title: "Projects"
-layout: fullwidth   # or default if you want
+layout: default   # or default if you want
 permalink: /projects/
 author_profile: false
 ---
