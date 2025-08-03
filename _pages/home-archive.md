@@ -1,7 +1,7 @@
 ---
 title: false 
 permalink: /
-layout: single
+layout: defualt
 author_profile: true
 ---
 
