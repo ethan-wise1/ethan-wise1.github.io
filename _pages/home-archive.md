@@ -14,7 +14,7 @@ With a foundation in core programming and systems, I enjoy building practical to
 - **Hackathon Project X**  
   Built in 24 hours with a team using ...
 
-- **Number Systems Converter**  
+- **Number Base Converter**  
   Lightweight JavaScript tool for translating between binary, hexadecimal, and decimal systems.
 
 - **Server Creation**  
