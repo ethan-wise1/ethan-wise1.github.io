@@ -90,3 +90,14 @@ html, body {
   display: block;
 }
 
+/* Make fullwidth container stretch wider than the usual page content */
+.fullwidth-container {
+  max-width: 1200px;  /* Adjust width as you want */
+  width: 90vw;        /* Responsive width */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+
