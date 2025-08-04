@@ -23,12 +23,6 @@ author_profile: false
   border-radius: 8px !important;
 }
 
-.quotes-wrapper > .quote-card:nth-child(even) {
-  background-color: #1a1a1a !important;
-  border-left-color: #268986 !important;
-  border-top-color: #268986 !important;
-}
-
 .quote-card .quote {
   font-style: italic;
   font-size: 1.2rem;
