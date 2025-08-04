@@ -11,10 +11,11 @@ author_profile: false
     <p class="author">– Harold Abelson</p>
   </div>
 
-  <div class="quote-card">
-    <p class="quote">“Code is like humor. When you have to explain it, it’s bad.”</p>
-    <p class="author">– Cory House</p>
-  </div>
+  <div class="quote-card" style="background-color: #111;">
+  <p class="quote">“Code is like humor. When you have to explain it, it’s bad.”</p>
+  <p class="author">– Cory House</p>
+</div>
+
 
   <div class="quote-card">
     <p class="quote">“The best way to get a project done faster is to start sooner.”</p>
