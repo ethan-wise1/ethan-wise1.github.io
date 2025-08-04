@@ -2,7 +2,7 @@
 permalink: /about_me/
 title: "About Me"
 ---
-
+<div class="projects-wrapper">
 
 Growing up, I’ve always been drawn to how things work and, more importantly, how to make them work better. Whether it’s building something from scratch, streamlining a process, or exploring unfamiliar technologies, I’m most engaged when I’m in a state of constant improvement, and I bring that mindset to everything I do.
 
