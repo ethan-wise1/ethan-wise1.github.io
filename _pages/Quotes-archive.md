@@ -41,24 +41,29 @@ author_profile: false
 <div class="quotes-wrapper">
 
   <div class="quote-card">
-    <p class="quote">“Programs must be written for people to read, and only incidentally for machines to execute.”</p>
-    <p class="author">– Harold Abelson</p>
+    <p class="quote">“There’s no elevator to success, you have to take the stairs.”</p>
+    <p class="author">~ Zig Ziglar</p>
   </div>
 
   <div class="quote-card" style="background-color: #111;">
-  <p class="quote">“Code is like humor. When you have to explain it, it’s bad.”</p>
-  <p class="author">– Cory House</p>
+  <p class="quote">“Your future needs you, your past doesn’t.”</p>
+  <p class="author">~ Unkown</p>
 </div>
 
 
   <div class="quote-card">
-    <p class="quote">“The best way to get a project done faster is to start sooner.”</p>
-    <p class="author">– Jim Highsmith</p>
+    <p class="quote">“They call us dreamers, but we’re the ones who don’t sleep.”</p>
+    <p class="author">~ Simone Myrie</p>
   </div>
 
   <div class="quote-card">
-    <p class="quote">“The best way to get a project done faster is to start sooner.”</p>
-    <p class="author">– Jim Highsmith</p>
+    <p class="quote">“I didn't come this far just to come this far.”</p>
+    <p class="author">~ Unkown</p>
+  </div>
+
+  <div class="quote-card">
+    <p class="quote">“Everyday is a new beginning, taking a deep breath, smile, and start again..”</p>
+    <p class="author">~ Bob Marley</p>
   </div>
 </div>
 
