@@ -210,6 +210,3 @@ collections:
   projects:
     output: true
     permalink: /projects/:name/
-  about_me:
-    output: true
-    permalink: /about_me/:name/
