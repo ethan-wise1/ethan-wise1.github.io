@@ -21,5 +21,10 @@ author_profile: false
     <p class="quote">“The best way to get a project done faster is to start sooner.”</p>
     <p class="author">– Jim Highsmith</p>
   </div>
+
+  <div class="quote-card">
+    <p class="quote">“The best way to get a project done faster is to start sooner.”</p>
+    <p class="author">– Jim Highsmith</p>
+  </div>
 </div>
 
