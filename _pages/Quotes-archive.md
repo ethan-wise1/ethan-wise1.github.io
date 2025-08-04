@@ -1,6 +1,6 @@
 ---
 title: "Principles & Perspective"
 permalink: /quotes/
-layout: tags
+layout: single
 author_profile: false
 ---
