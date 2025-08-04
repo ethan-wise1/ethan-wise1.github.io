@@ -7,4 +7,4 @@ image: false
 video: false
 ---
 
-Brief description of the project here. Built in 48 hours with React, Firebase, and Google Maps API.
+As part of a hackathon sponsored by NASA, USDA, and AWS, our team developed a Convolutional Neural Network (CNN) to detect and map previously uncharted roads in remote forested areas using LIDAR and elevation data. We trained the model on six image layers, including four from high-resolution LIDAR datasets and two from elevation-based terrain models. The images were preprocessed into 256×256 pixel tiles containing roads to optimize memory usage. Working in an AWS environment, we used tools such as TensorFlow, PyTorch, scikit-learn, Rasterio, and NumPy to build a system capable of identifying road networks in regions lacking accurate maps.
