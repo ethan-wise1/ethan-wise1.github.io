@@ -2,15 +2,18 @@
 
 /* Match Projects page background and text colors */
 html, body {
-  background-color: #ffffff !important;  /* dark grey like Projects page */
-  color: #f5f5f5 !important;             /* light text */
+  background-color: #121212 !important;  /* Projects page dark bg */
+  color: #f5f5f5 !important;             /* Light text */
   margin: 0;
   padding: 0;
 }
 
-.site-wrapper, .page__inner-wrap {
-  background-color: #ffffff !important;
-  color: #f5f5f5 !important;  /* adjust text color for white background */
+.initial-content,
+#main,
+.page__inner-wrap {
+  background-color: #121212 !important;
+  color: #f5f5f5 !important;
+  min-height: 100vh; /* optional: ensure full viewport height */
 }
 
 /* Navigation bar background & text */
