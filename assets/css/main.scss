@@ -9,11 +9,17 @@
 .quote-card {
   background-color: #111;
   border-left: 4px solid #2aa198;
+  border-top: 2px solid #2aa198; /* Add top border accent */
   margin-bottom: 2rem;
   padding: 1.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   color: #eee;
   border-radius: 8px;
+}
+
+/* Alternating background for visual distinction */
+.quote-card:nth-child(even) {
+  background-color: #1a1a1a;
 }
 
 .quote-card .quote {
