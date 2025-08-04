@@ -44,6 +44,8 @@ author_profile: false
 }
 </style>
 
+<div class="quotes-wrapper">
+
   <div class="quote-card">
     <p class="quote">“Programs must be written for people to read, and only incidentally for machines to execute.”</p>
     <p class="author">– Harold Abelson</p>
