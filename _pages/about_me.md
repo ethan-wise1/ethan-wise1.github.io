@@ -1,6 +1,7 @@
 ---
 permalink: /about_me/
 title: "About Me"
+layout: single
 ---
 <div class="projects-wrapper">
 
