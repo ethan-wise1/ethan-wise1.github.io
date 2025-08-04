@@ -8,6 +8,11 @@ html, body {
   padding: 0;
 }
 
+.site-wrapper, .page__inner-wrap {
+  background-color: #ffffff !important;
+  color: #f5f5f5 !important;  /* adjust text color for white background */
+}
+
 /* Navigation bar background & text */
 #site-nav.greedy-nav {
   background-color: #111 !important;  /* very dark grey */
