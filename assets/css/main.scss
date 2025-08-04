@@ -18,7 +18,7 @@
 }
 
 /* Alternating background for visual distinction */
-.quote-card:nth-child(even) {
+.quotes-wrapper > .quote-card:nth-child(even) {
   background-color: #1a1a1a;
 }
 
