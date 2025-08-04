@@ -61,9 +61,9 @@ author_profile: false
 
   /* Project title link styles */
   ul.projects-list li .content h2 a {
-    color: #fff;
-    text-decoration: none;
-  }
+  color: #4a90e2; /* or use the same color your theme uses for normal links */
+  text-decoration: none;
+}
   ul.projects-list li .content h2 a:hover {
     text-decoration: underline;
   }
