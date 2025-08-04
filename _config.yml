@@ -202,7 +202,7 @@ tag_archive:
   
 sass:
   style: compressed
-minimal_mistakes_skin: "dark"
+# minimal_mistakes_skin: "dark"
 assets:
   css: "/assets/css/main.scss"
 
