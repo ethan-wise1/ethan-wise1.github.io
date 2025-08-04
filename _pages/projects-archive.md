@@ -66,7 +66,7 @@ author_profile: false
 
   /* Project title link styles */
   ul.projects-list li .content h2 a {
-  color: #eee; /* or use the same color your theme uses for normal links */
+  color: #2aa198; /* or use the same color your theme uses for normal links */
   text-decoration: inherit;
 }
   ul.projects-list li .content h2 a:hover {
