@@ -127,7 +127,7 @@ author_profile: false
               {% if project.video %}
                 <p><a href="{{ project.video }}" target="_blank" rel="noopener noreferrer">Video: App Walkthrough</a></p>
               {% endif %}
-              <p>{{ project.excerpt | strip_html | truncatewords: 30 }}</p>
+              <p>{{ project.excerpt | truncatewords: 30 }}</p>
             </div>
             {% if project.image %}
               <img src="{{ project.image }}" alt="{{ project.title }} image" />
