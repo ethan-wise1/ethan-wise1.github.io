@@ -6,10 +6,10 @@
   padding: 2rem 1rem;
 }
 
-body.dark-theme .quotes-wrapper > .quote-card {
+.quotes-wrapper > .quote-card {
   background-color: #111 !important;
   border-left: 4px solid #2aa198 !important;
-  border-top: 2px solid #2aa198 !important; /* Add top border accent */
+  border-top: 2px solid #2aa198 !important;
   margin-bottom: 2rem;
   padding: 1.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3) !important;
@@ -17,8 +17,7 @@ body.dark-theme .quotes-wrapper > .quote-card {
   border-radius: 8px !important;
 }
 
-/* Alternating background for visual distinction */
-body.dark-theme .quotes-wrapper > .quote-card:nth-child(even) {
+.quotes-wrapper > .quote-card:nth-child(even) {
   background-color: #1a1a1a !important;
   border-left-color: #268986 !important;
   border-top-color: #268986 !important;
@@ -37,6 +36,7 @@ body.dark-theme .quotes-wrapper > .quote-card:nth-child(even) {
   color: #2aa198;
   margin-top: 0.5rem;
 }
+
 
 /* Match Projects page background and text colors */
 /* Set dark background and light text for entire page containers */
