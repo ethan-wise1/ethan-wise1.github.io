@@ -59,13 +59,19 @@ author_profile: false
     flex-shrink: 0;
   }
 
+   /* Underline all project titles */
+  ul.projects-list li .content h2 {
+    text-decoration: underline;
+  }
+
   /* Project title link styles */
   ul.projects-list li .content h2 a {
-  color: #4a90e2; /* or use the same color your theme uses for normal links */
-  text-decoration: none;
+  color: #f5f5f5; /* or use the same color your theme uses for normal links */
+  text-decoration: inherit;
 }
   ul.projects-list li .content h2 a:hover {
-    text-decoration: underline;
+    color: #ffffff;
+    text-decoration: inherit;
   }
 
   /* Paragraph text */
