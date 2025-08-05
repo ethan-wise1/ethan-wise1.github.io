@@ -105,8 +105,12 @@ author_profile: false
                 <p><a href="{{ project.zip_file }}" download target="_blank" rel="noopener noreferrer">Download ZIP</a></p>
               {% endif %}
               {% if project.video %}
-                <p><a href="{{ project.video }}" target="_blank" rel="noopener noreferrer">Video: App Walkthrough</a></p>
-              {% endif %}
+  <p>
+    <a href="{{ project.video }}" target="_blank" rel="noopener noreferrer">
+      Video: {{ project.video_label | default: "App Walkthrough" }}
+    </a>
+  </p>
+{% endif %}
               <p>{{ project.excerpt }}</p>
             </div>
           {% else %}
