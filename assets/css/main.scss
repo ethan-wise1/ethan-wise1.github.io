@@ -1,34 +1,28 @@
 @import "minimal-mistakes";
 
-/* === Force icon color styling in author profile & footer === */
-.author__urls.social-icons li a[href*="linkedin"] i,
-.footer .author__urls.social-icons li a[href*="linkedin"] i {
+/* === Footer icon color styling === */
+.page__footer a[href*="linkedin"] i {
   color: #0077B5 !important;
 }
 
-.author__urls.social-icons li a[href*=".pdf"] i,
-.footer .author__urls.social-icons li a[href*=".pdf"] i {
+.page__footer a[href*=".pdf"] i {
   color: #d14836 !important;
 }
 
-.author__urls.social-icons li a[href^="mailto:"] i,
-.footer .author__urls.social-icons li a[href^="mailto:"] i {
+.page__footer a[href^="mailto:"] i {
   color: #c71610 !important;
 }
 
-/* Hover state colors */
-.author__urls.social-icons li a[href*="linkedin"]:hover i,
-.footer .author__urls.social-icons li a[href*="linkedin"]:hover i {
+/* Hover states */
+.page__footer a[href*="linkedin"]:hover i {
   color: #005582 !important;
 }
 
-.author__urls.social-icons li a[href*=".pdf"]:hover i,
-.footer .author__urls.social-icons li a[href*=".pdf"]:hover i {
+.page__footer a[href*=".pdf"]:hover i {
   color: #a03229 !important;
 }
 
-.author__urls.social-icons li a[href^="mailto:"]:hover i,
-.footer .author__urls.social-icons li a[href^="mailto:"]:hover i {
+.page__footer a[href^="mailto:"]:hover i {
   color: #8a0e0a !important;
 }
 
