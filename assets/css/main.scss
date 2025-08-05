@@ -1,1 +1,183 @@
+@import "minimal-mistakes";
+@import "custom";
+
+/* === Footer icon color styling === */
+.page__footer a[href*="linkedin"] i {
+  color: #0077B5 !important;
+}
+
+.page__footer a[href*=".pdf"] i {
+  color: #d14836 !important;
+}
+
+.page__footer a[href^="mailto:"] i {
+  color: #c71610 !important;
+}
+
+/* Hover states */
+.page__footer a[href*="linkedin"]:hover i {
+  color: #005582 !important;
+}
+
+.page__footer a[href*=".pdf"]:hover i {
+  color: #a03229 !important;
+}
+
+.page__footer a[href^="mailto:"]:hover i {
+  color: #8a0e0a !important;
+}
+
+/* Match Projects page background and text colors */
+/* Set dark background and light text for entire page containers */
+body.dark-theme,
+body.dark-theme #main,
+body.dark-theme .initial-content,
+body.dark-theme .page__inner-wrap,
+body.dark-theme .page,
+body.dark-theme .page__footer {
+  background-color: #121212 !important;
+  color: #f5f5f5 !important;
+}
+
+body.dark-theme a,
+body.dark-theme a:visited,
+body.dark-theme a:hover,
+body.dark-theme a:focus {
+  color: #ddd !important;
+}
+
+
+/* Navigation bar background & text */
+#site-nav.greedy-nav {
+  background-color: #111 !important;  /* very dark grey */
+  color: #f5f5f5 !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 10px 20px;
+}
+
+#site-nav.greedy-nav,
+#site-nav.greedy-nav a {
+  color: #f5f5f5 !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+}
+
+/* Site title styling */
+#site-nav > .site-title {
+  border: 1px solid rgba(245, 245, 245, 0.3);
+  padding: 6px 12px;
+  margin-right: 12px;
+  border-radius: 6px;
+  color: #f5f5f5 !important;
+  display: inline-block;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  text-decoration: none !important;
+}
+
+/* Nav menu links */
+#site-nav ul.visible-links li.masthead__menu-item > a {
+  border: 1px solid rgba(245, 245, 245, 0.3);
+  padding: 6px 12px;
+  margin: 0 6px;
+  border-radius: 6px;
+  color: #f5f5f5 !important;
+  display: inline-block;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  text-decoration: none !important;
+}
+
+/* Hover effects */
+#site-nav > .site-title:hover,
+#site-nav ul.visible-links li.masthead__menu-item > a:hover {
+  background-color: rgba(245, 245, 245, 0.1);
+  border-color: rgba(245, 245, 245, 0.7);
+  color: #fff !important;
+}
+
+/* Page title link */
+.page__title a {
+  color: #f5f5f5 !important;
+  font-weight: 800 !important;
+  text-decoration: none !important;
+}
+
+.page__title a:hover {
+  color: #ddd !important;
+  text-decoration: underline !important;
+}
+
+/* Mobile dropdown background */
+.greedy-nav .hidden-links {
+  background-color: #1a1a1a !important;
+  border-radius: 8px;
+  padding: 10px 0;
+}
+
+.greedy-nav .hidden-links a {
+  color: #f5f5f5 !important;
+  font-weight: 600;
+  padding: 10px 16px;
+  display: block;
+}
+
+/* Fullwidth container */
+.fullwidth-container {
+  max-width: 1200px;
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+/* === Desktop styles remain as is === */
+
+/* === MOBILE STYLES: for screens up to 768px wide === */
+@media (max-width: 768px) {
+  /* Make projects list items stack vertically */
+  ul.projects-list li {
+    flex-direction: column !important; /* force column layout */
+    align-items: center !important;
+    padding: 1.5rem 1rem !important;
+    margin-bottom: 1.5rem !important; /* smaller spacing */
+  }
+
+  /* Make images full width but limited max-width */
+  ul.projects-list li img {
+    width: 90% !important;
+    max-width: 350px !important;
+    margin-bottom: 1rem !important;
+    border-radius: 8px;
+  }
+
+  /* Reset content margins and center text */
+  ul.projects-list li .content {
+    margin: 0 !important;
+    text-align: center !important;
+    color: #eee;
+  }
+
+  /* Adjust headers and links for readability */
+  ul.projects-list li .content h2 {
+    font-size: 1.5rem !important;
+  }
+  ul.projects-list li .content h2 a {
+    color: #2aa198 !important;
+  }
+  ul.projects-list li .content h2 a:hover {
+    color: #ffffff !important;
+  }
+
+  /* Paragraph max width 100% to avoid overflow */
+  ul.projects-list li .content p {
+    max-width: 100% !important;
+  }
+
+  /* Remove left/right justification classes */
+  ul.projects-list li.left,
+  ul.projects-list li.right {
+    justify-content: center !important;
+  }
+}
 
