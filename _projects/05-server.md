@@ -1,5 +1,5 @@
 ---
-title: First Server: Bi-Directional TCP Messaging Server
+title: "First Server: Bi-Directional TCP Messaging Server"
 link_url: false
 github_url: false
 zip_file: "assets/cs250.zip"
