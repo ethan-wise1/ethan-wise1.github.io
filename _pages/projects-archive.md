@@ -73,6 +73,10 @@ author_profile: false
   ul.projects-list li .content p {
     max-width: 600px;
   }
+
+   ul.projects-list li img.large-image {
+    width: 800px !important;
+  }
 </style>
 
 <div class="projects-wrapper">
