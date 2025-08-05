@@ -13,9 +13,6 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "Ethan Wise"
-description: "Software Developer | Hackathons, Projects, and Experiments"
-url: "https://ethan-wise1.github.io"
 baseurl: "" # Leave this blank for GitHub Pages
 
 
