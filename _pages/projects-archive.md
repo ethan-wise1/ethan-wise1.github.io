@@ -9,8 +9,8 @@ author_profile: false
   .projects-wrapper {
     width: 100vw;
     position: relative;
-    background-color: #000;
-    padding: 2rem 0;
+    background-color: transparent;
+    padding: 0;
   }
 
   .projects-container {
@@ -29,7 +29,7 @@ author_profile: false
   align-items: center;
   margin-bottom: 4rem;   /* gap between project blocks */
   padding: 1rem;         /* inner spacing inside each project block */
-  background-color: #111; /* dark background slightly different from page background */
+  background-color: #000; /* dark background slightly different from page background */
   border-radius: 8px; 
   }
 
