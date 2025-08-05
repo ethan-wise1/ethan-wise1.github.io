@@ -40,6 +40,11 @@ author_profile: false
 
 <div class="quotes-wrapper">
 
+<div class="quote-card">
+    <p class="quote">“The master has failed more times than the beginner has even tried.”</p>
+    <p class="author">~ Stephen McCranie</p>
+  </div>
+
  <div class="quote-card">
     <p class="quote"> "Greatness isn't a finish line you cross, it's a road you choose."</p>
     <p class="author">~ Unkown</p>
@@ -63,11 +68,6 @@ author_profile: false
   <div class="quote-card">
     <p class="quote"> "If you leave your dreams on your pillow, you might as well just stay in bed."</p>
     <p class="author">~ Toni Sorenson</p>
-  </div>
-
-  <div class="quote-card">
-    <p class="quote">“The master has failed more times than the beginner has even tried.”</p>
-    <p class="author">~ Stephen McCranie</p>
   </div>
 
   <div class="quote-card">
