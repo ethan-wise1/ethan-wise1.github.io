@@ -4,6 +4,7 @@ link_url: "https://docs.google.com/presentation/d/1u0le9-LxM08EZDbnfW-Ybc1ydkX9Y
 github_url: false
 zip_file: false
 image: "/assets/images/Sumo_Interface.png"
+image_position: left
 video: false
 ---
 
