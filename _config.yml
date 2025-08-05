@@ -195,13 +195,16 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
-  
-sass:
-  style: compressed
+
+theme: null
 remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "dark"
+
+sass:
+  style: compressed
+
 assets:
-  css: "main.scss"
+  css: "/assets/css/main.scss"
 
 collections:
   projects:
