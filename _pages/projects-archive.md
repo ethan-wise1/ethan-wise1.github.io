@@ -75,7 +75,7 @@ author_profile: false
   }
 
    ul.projects-list li img.large-image {
-    width: 800px !important;
+    width: 400px;
   }
 </style>
 
