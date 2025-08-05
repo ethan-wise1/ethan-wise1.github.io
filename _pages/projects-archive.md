@@ -8,9 +8,9 @@ author_profile: false
 <style>
   /* Full width wrapper for projects */
   .projects-wrapper {
-    width: 100vw;
+    width: 100vw; /* full viewport width */
     position: relative;
-    background-color: #000;
+    background-color: #000; /* add black background */
     padding: 2rem 0;
   }
 
@@ -40,7 +40,6 @@ author_profile: false
   ul.projects-list li.left .content {
     margin-left: 2rem;
     color: #eee;
-    text-align: left;
   }
 
   /* Right-aligned project */
@@ -50,8 +49,8 @@ author_profile: false
 
   ul.projects-list li.right .content {
     margin-right: 2rem;
-    color: #eee;
     text-align: right;
+    color: #eee;
   }
 
   ul.projects-list li img {
@@ -60,17 +59,16 @@ author_profile: false
     flex-shrink: 0;
   }
 
-  /* Underline all project titles */
+   /* Underline all project titles */
   ul.projects-list li .content h2 {
     text-decoration: underline;
   }
 
   /* Project title link styles */
   ul.projects-list li .content h2 a {
-    color: #2aa198;
-    text-decoration: inherit;
-  }
-
+  color: #2aa198; /* or use the same color your theme uses for normal links */
+  text-decoration: inherit;
+}
   ul.projects-list li .content h2 a:hover {
     color: #ffffff;
     text-decoration: inherit;
@@ -87,41 +85,54 @@ author_profile: false
     <ul class="projects-list">
       {% for project in site.projects %}
         {% assign is_odd = forloop.index | modulo: 2 %}
-        {% assign default_side = is_odd == 1 | if: "left", "right" %}
-        {% assign side = project.image_position | default: default_side %}
-        <li class="{{ side }}">
-          {% if side == "left" %}
+        <li class="{% if is_odd == 1 %}left{% else %}right{% endif %}">
+          {% if is_odd == 1 %}
             {% if project.image %}
               <img src="{{ project.image }}" alt="{{ project.title }} image" />
             {% endif %}
-          {% endif %}
-
-          <div class="content">
-            <h2>
-              {% if project.link_url %}
-                <a href="{{ project.link_url }}" target="_blank" rel="noopener noreferrer">{{ project.title }}</a>
-              {% else %}
-                <span>{{ project.title }}</span>
+            <div class="content">
+              <h2>
+                {% if project.link_url %}
+                  <a href="{{ project.link_url }}" target="_blank" rel="noopener noreferrer">{{ project.title }}</a>
+                {% else %}
+                  <span>{{ project.title }}</span>
+                {% endif %}
+              </h2>
+              {% if project.github_url %}
+                <p><a href="{{ project.github_url }}" target="_blank" rel="noopener noreferrer">GitHub Repository</a></p>
               {% endif %}
-            </h2>
-
-            {% if project.github_url %}
-              <p><a href="{{ project.github_url }}" target="_blank" rel="noopener noreferrer">GitHub Repository</a></p>
-            {% endif %}
-
-            {% if project.zip_file %}
-              <p><a href="{{ project.zip_file }}" download target="_blank" rel="noopener noreferrer">Download ZIP</a></p>
-            {% endif %}
-
-            {% if project.video %}
-              <p><a href="{{ project.video }}" target="_blank" rel="noopener noreferrer">
-                Video: {{ project.video_label | default: "App Walkthrough" }}</a></p>
-            {% endif %}
-
-            <p>{{ project.excerpt }}</p>
-          </div>
-
-          {% if side == "right" %}
+              {% if project.zip_file %}
+                <p><a href="{{ project.zip_file }}" download target="_blank" rel="noopener noreferrer">Download ZIP</a></p>
+              {% endif %}
+              {% if project.video %}
+  <p>
+    <a href="{{ project.video }}" target="_blank" rel="noopener noreferrer">
+      Video: {{ project.video_label | default: "App Walkthrough" }}
+    </a>
+  </p>
+{% endif %}
+              <p>{{ project.excerpt }}</p>
+            </div>
+          {% else %}
+            <div class="content">
+              <h2>
+                {% if project.link_url %}
+                  <a href="{{ project.link_url }}" target="_blank" rel="noopener noreferrer">{{ project.title }}</a>
+                {% else %}
+                  <span>{{ project.title }}</span>
+                {% endif %}
+              </h2>
+              {% if project.github_url %}
+                <p><a href="{{ project.github_url }}" target="_blank" rel="noopener noreferrer">GitHub Repository</a></p>
+              {% endif %}
+              {% if project.zip_file %}
+                <p><a href="{{ project.zip_file }}" download target="_blank" rel="noopener noreferrer">Download ZIP</a></p>
+              {% endif %}
+              {% if project.video %}
+                <p><a href="{{ project.video }}" target="_blank" rel="noopener noreferrer">Video: App Walkthrough</a></p>
+              {% endif %}
+              <p>{{ project.excerpt }}</p>
+            </div>
             {% if project.image %}
               <img src="{{ project.image }}" alt="{{ project.title }} image" />
             {% endif %}
