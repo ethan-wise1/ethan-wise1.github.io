@@ -201,7 +201,7 @@ sass:
 remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "dark"
 assets:
-  css: "css/main.scss"
+  css: "main.scss"
 
 collections:
   projects:
