@@ -1,3 +1,46 @@
+@import "minimal-mistakes";
+
+/* Color the icons in author profile and footer */
+.author-profile .author-links a .fab.fa-linkedin {
+  color: #0077B5; /* LinkedIn blue */
+}
+
+.author-profile .author-links a .fas.fa-file-alt {
+  color: #d14836; /* Red-ish for Resume (like Google Docs icon red) */
+}
+
+.author-profile .author-links a .fas.fa-envelope {
+  color: #c71610; /* Classic email red */
+}
+
+/* Also apply same colors for footer icons */
+.footer .author-links a .fab.fa-linkedin {
+  color: #0077B5;
+}
+
+.footer .author-links a .fas.fa-file-alt {
+  color: #d14836;
+}
+
+.footer .author-links a .fas.fa-envelope {
+  color: #c71610;
+}
+
+/* Optional: on hover, brighten the icon */
+.author-profile .author-links a:hover .fab.fa-linkedin,
+.footer .author-links a:hover .fab.fa-linkedin {
+  color: #005582;
+}
+
+.author-profile .author-links a:hover .fas.fa-file-alt,
+.footer .author-links a:hover .fas.fa-file-alt {
+  color: #a03229;
+}
+
+.author-profile .author-links a:hover .fas.fa-envelope,
+.footer .author-links a:hover .fas.fa-envelope {
+  color: #8a0e0a;
+}
 
 
 
