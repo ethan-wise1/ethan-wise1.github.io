@@ -7,7 +7,7 @@ author_profile: false
 
 <style>
   .projects-wrapper {
-    width: 100vw;
+    width: 50vw;
     position: relative;
     background-color: #000;
     padding: 2rem 0;
