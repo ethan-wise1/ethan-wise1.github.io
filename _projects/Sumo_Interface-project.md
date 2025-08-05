@@ -3,7 +3,7 @@ title: "Sumo Analytics: A NoSQL-Powered Tournament Platform"
 link_url: "https://docs.google.com/presentation/d/1u0le9-LxM08EZDbnfW-Ybc1ydkX9YksY3_jCihZezU4/present?slide=id.g3476559e94c_0_0#slide=id.g3476559e94c_0_0"
 github_url: false
 zip_file: false
-image: false
+image: "/assets/images/Sumo_Interface.png"
 video: false
 ---
 
