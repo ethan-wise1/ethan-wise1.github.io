@@ -25,9 +25,12 @@ author_profile: false
   }
 
   ul.projects-list li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 4rem;
+     display: flex;
+  align-items: center;
+  margin-bottom: 4rem;   /* gap between project blocks */
+  padding: 1rem;         /* inner spacing inside each project block */
+  background-color: #111; /* dark background slightly different from page background */
+  border-radius: 8px; 
   }
 
   ul.projects-list li.left {
