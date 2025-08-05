@@ -5,6 +5,7 @@ github_url: false
 zip_file: false
 image: "/assets/images/Sumo_Interface.png"
 image_position: left
+custom_image_class: large-image
 video: false
 ---
 
@@ -15,3 +16,7 @@ MongoDB as the NoSQL backend to store structured wrestling data, including indiv
 The application demonstrated querying this data in real time to drive interactive graphs and visualizations, allowing users to 
 explore historical trends and compare wrestler statistics. The project emphasized scalable data access, efficient querying, and 
 real-time updates, highlighting the strengths of MongoDB and NoSQL technologies in read-heavy, analytical use cases.
+
+ul.projects-list li img.large-image {
+  width: 400px; /* or whatever you want */
+}
