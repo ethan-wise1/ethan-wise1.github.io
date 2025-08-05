@@ -1,48 +1,32 @@
 @import "minimal-mistakes";
 
-/* Color the icons in author profile and footer */
-.author-profile .author-links a .fab.fa-linkedin {
-  color: #0077B5; /* LinkedIn blue */
+/* LinkedIn */
+.author__urls.social-icons a[href*="linkedin"] {
+  color: #0077B5 !important;
 }
 
-.author-profile .author-links a .fas.fa-file-alt {
-  color: #d14836; /* Red-ish for Resume (like Google Docs icon red) */
+/* Resume (PDF link) */
+.author__urls.social-icons a[href$=".pdf"] {
+  color: #d14836 !important;
 }
 
-.author-profile .author-links a .fas.fa-envelope {
-  color: #c71610; /* Classic email red */
+/* Email */
+.author__urls.social-icons a[href^="mailto:"] {
+  color: #c71610 !important;
 }
 
-/* Also apply same colors for footer icons */
-.footer .author-links a .fab.fa-linkedin {
-  color: #0077B5;
+/* Optional hover effects */
+.author__urls.social-icons a[href*="linkedin"]:hover {
+  color: #005582 !important;
 }
 
-.footer .author-links a .fas.fa-file-alt {
-  color: #d14836;
+.author__urls.social-icons a[href$=".pdf"]:hover {
+  color: #a03229 !important;
 }
 
-.footer .author-links a .fas.fa-envelope {
-  color: #c71610;
+.author__urls.social-icons a[href^="mailto:"]:hover {
+  color: #8a0e0a !important;
 }
-
-/* Optional: on hover, brighten the icon */
-.author-profile .author-links a:hover .fab.fa-linkedin,
-.footer .author-links a:hover .fab.fa-linkedin {
-  color: #005582;
-}
-
-.author-profile .author-links a:hover .fas.fa-file-alt,
-.footer .author-links a:hover .fas.fa-file-alt {
-  color: #a03229;
-}
-
-.author-profile .author-links a:hover .fas.fa-envelope,
-.footer .author-links a:hover .fas.fa-envelope {
-  color: #8a0e0a;
-}
-
-
 
 /* Match Projects page background and text colors */
 /* Set dark background and light text for entire page containers */
