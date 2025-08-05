@@ -6,55 +6,48 @@ author_profile: false
 ---
 
 <style>
-  /* Outer wrapper full width, light background for page sides */
   .projects-wrapper {
-    width: 100vw;
-    background-color: #f0f0f0; /* light page side background */
+    width: 50vw;
+    position: relative;
+    background-color: #000;
     padding: 2rem 0;
-    display: flex;
-    justify-content: center; /* center projects-container horizontally */
   }
 
-  /* Black box container centered on page */
   .projects-container {
-    background-color: #000; /* projects background */
     max-width: 1200px;
-    width: 100%;
-    padding: 2rem;
-    box-sizing: border-box;
+    margin: 0 auto;
   }
 
   ul.projects-list {
     list-style: none;
     padding: 0;
     margin: 0;
-    width: 100%;
   }
 
   ul.projects-list li {
     display: flex;
     align-items: center;
-    width: 100%;
     margin-bottom: 4rem;
-    max-width: 800px; /* limit project block width */
   }
 
-  /* Alternate alignment inside container */
   ul.projects-list li.left {
     justify-content: flex-start;
+  }
+
+  ul.projects-list li.left .content {
+    margin-left: 2rem;
+    color: #eee;
     text-align: left;
   }
 
   ul.projects-list li.right {
     justify-content: flex-end;
-    text-align: right;
   }
 
-  /* Content width and color */
-  ul.projects-list li.left .content,
   ul.projects-list li.right .content {
-    max-width: 600px;
+    margin-right: 2rem;
     color: #eee;
+    text-align: right;
   }
 
   ul.projects-list li img {
@@ -81,7 +74,7 @@ author_profile: false
     max-width: 600px;
   }
 
-  ul.projects-list li img.large-image {
+   ul.projects-list li img.large-image {
     width: 400px;
   }
 </style>
@@ -102,6 +95,7 @@ author_profile: false
           {% if side == "left" %}
             {% if project.image %}
               <img src="{{ project.image }}" alt="{{ project.title }} image" class="{{ project.custom_image_class }}" />
+
             {% endif %}
           {% endif %}
 
@@ -133,6 +127,7 @@ author_profile: false
           {% if side == "right" %}
             {% if project.image %}
               <img src="{{ project.image }}" alt="{{ project.title }} image" class="{{ project.custom_image_class }}" />
+
             {% endif %}
           {% endif %}
         </li>
