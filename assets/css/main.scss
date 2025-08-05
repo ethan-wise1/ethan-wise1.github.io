@@ -142,4 +142,31 @@ body.dark-theme a:focus {
     max-width: 100% !important;
     margin: 0 !important;
   }
+
+  /* Base desktop styles */
+ul.projects-list li {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  ul.projects-list li {
+    flex-direction: column; /* stack image + text vertically */
+    padding: 1rem;
+  }
+
+  ul.projects-list li img {
+    width: 100%;      /* full width image */
+    max-width: 300px; /* limit max width */
+    margin-bottom: 1rem;
+  }
+
+  ul.projects-list li .content {
+    margin: 0;        /* remove side margins */
+    text-align: center;
+  }
+}
+
 }
