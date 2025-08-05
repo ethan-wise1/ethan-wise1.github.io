@@ -17,8 +17,3 @@ The application demonstrated querying this data in real time to drive interactiv
 explore historical trends and compare wrestler statistics. The project emphasized scalable data access, efficient querying, and 
 real-time updates, highlighting the strengths of MongoDB and NoSQL technologies in read-heavy, analytical use cases.
 
-<style>
-  ul.projects-list li img.large-image {
-    width: 800px !important;
-  }
-</style>
