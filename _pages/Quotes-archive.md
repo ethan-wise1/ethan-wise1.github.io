@@ -40,25 +40,29 @@ author_profile: false
 
 <div class="quotes-wrapper">
 
+ <div class="quote-card">
+    <p class="quote"> "Greatness isn't a finish line you cross, it's a road you choose."</p>
+    <p class="author">~ Unkown</p>
+  </div>
+
+   <div class="quote-card">
+    <p class="quote">"Start strong. Finish stronger."</p>
+    <p class="author">~ Unkown</p>
+  </div>
+
   <div class="quote-card">
     <p class="quote">“There’s no elevator to success, you have to take the stairs.”</p>
     <p class="author">~ Zig Ziglar</p>
   </div>
 
-  <div class="quote-card" style="background-color: #111;">
-  <p class="quote">“Your future needs you, your past doesn’t.”</p>
-  <p class="author">~ Unkown</p>
-</div>
-
-
   <div class="quote-card">
-    <p class="quote">“They call us dreamers, but we’re the ones who don’t sleep.”</p>
-    <p class="author">~ Simone Myrie</p>
+    <p class="quote"> "dulcius ex asperis."</p>
+    <p class="author">~ Unkown</p>
   </div>
 
   <div class="quote-card">
-    <p class="quote">“I didn't come this far just to come this far.”</p>
-    <p class="author">~ Unkown</p>
+    <p class="quote"> "If you leave your dreams on your pillow, you might as well just stay in bed."</p>
+    <p class="author">~ Toni Sorenson</p>
   </div>
 
   <div class="quote-card">
@@ -82,28 +86,13 @@ author_profile: false
   </div>
 
   <div class="quote-card">
-    <p class="quote">"Start strong. Finish stronger."</p>
-    <p class="author">~ Unkown</p>
-  </div>
-
-  <div class="quote-card">
     <p class="quote">"A river cuts through rock, not because of its power, but because of its persistence."</p>
     <p class="author">~ Jim Watkins</p>
-  </div>
-
-  <div class="quote-card">
-    <p class="quote"> "If you leave your dreams on your pillow, you might as well just stay in bed."</p>
-    <p class="author">~ Toni Sorenson</p>
   </div>
 
    <div class="quote-card">
     <p class="quote"> "You can have excuses or results. Not both."</p>
     <p class="author">~ Arnold Schwarzenegger</p>
-  </div>
-
-  <div class="quote-card">
-    <p class="quote"> "dulcius ex asperis."</p>
-    <p class="author">~ Unkown</p>
   </div>
 
    <div class="quote-card">
@@ -126,6 +115,11 @@ author_profile: false
     <p class="author">~ Thomas Carlyle</p>
   </div>
 
+  <div class="quote-card">
+    <p class="quote">“I didn't come this far just to come this far.”</p>
+    <p class="author">~ Unkown</p>
+  </div>
+
    <div class="quote-card">
     <p class="quote"> "Every step leaves a footprint, no matter how small."</p>
     <p class="author">~ Unkown</p>
@@ -136,6 +130,11 @@ author_profile: false
     <p class="author">~ Unkown</p>
   </div>
 
+<div class="quote-card" style="background-color: #111;">
+  <p class="quote">“Your future needs you, your past doesn’t.”</p>
+  <p class="author">~ Unkown</p>
+</div>
+
   <div class="quote-card">
     <p class="quote"> "If you want to lead the orchestra, you must turn your back on the crowd."</p>
     <p class="author">~ Max Lucado</p>
@@ -144,11 +143,6 @@ author_profile: false
   <div class="quote-card">
     <p class="quote"> "Your mind is like water, when it is agitated, it is difficult to see. But if you allow it to settle, the answer becomes clear"."</p>
     <p class="author">~ Master Oogway</p>
-  </div>
-
-  <div class="quote-card">
-    <p class="quote"> "Greatness isn't a finish line you cross, it's a road you choose."</p>
-    <p class="author">~ Unkown</p>
   </div>
 
   <div class="quote-card">
