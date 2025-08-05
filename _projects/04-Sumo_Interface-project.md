@@ -18,5 +18,5 @@ explore historical trends and compare wrestler statistics. The project emphasize
 real-time updates, highlighting the strengths of MongoDB and NoSQL technologies in read-heavy, analytical use cases.
 
 ul.projects-list li img.large-image {
-  width: 400px; /* or whatever you want */
+  width: 800px; /* or whatever you want */
 }
