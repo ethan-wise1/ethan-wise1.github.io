@@ -90,7 +90,8 @@ author_profile: false
         <li class="{{ side }}">
           {% if side == "left" %}
             {% if project.image %}
-              <img src="{{ project.image }}" alt="{{ project.title }} image" />
+              <img src="{{ project.image }}" alt="{{ project.title }} image" class="{{ project.custom_image_class }}" />
+
             {% endif %}
           {% endif %}
 
@@ -121,7 +122,8 @@ author_profile: false
 
           {% if side == "right" %}
             {% if project.image %}
-              <img src="{{ project.image }}" alt="{{ project.title }} image" />
+              <img src="{{ project.image }}" alt="{{ project.title }} image" class="{{ project.custom_image_class }}" />
+
             {% endif %}
           {% endif %}
         </li>
