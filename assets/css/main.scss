@@ -1,30 +1,34 @@
 @import "minimal-mistakes";
 
-/* Force color for LinkedIn icon */
-.author__urls.social-icons li a[href*="linkedin"] i {
+/* === Force icon color styling in author profile & footer === */
+.author__urls.social-icons li a[href*="linkedin"] i,
+.footer .author__urls.social-icons li a[href*="linkedin"] i {
   color: #0077B5 !important;
 }
 
-/* Force color for Resume icon */
-.author__urls.social-icons li a[href$=".pdf"] i {
+.author__urls.social-icons li a[href*=".pdf"] i,
+.footer .author__urls.social-icons li a[href*=".pdf"] i {
   color: #d14836 !important;
 }
 
-/* Force color for Email icon */
-.author__urls.social-icons li a[href^="mailto:"] i {
+.author__urls.social-icons li a[href^="mailto:"] i,
+.footer .author__urls.social-icons li a[href^="mailto:"] i {
   color: #c71610 !important;
 }
 
-/* Optional hover styles */
-.author__urls.social-icons li a[href*="linkedin"]:hover i {
+/* Hover state colors */
+.author__urls.social-icons li a[href*="linkedin"]:hover i,
+.footer .author__urls.social-icons li a[href*="linkedin"]:hover i {
   color: #005582 !important;
 }
 
-.author__urls.social-icons li a[href$=".pdf"]:hover i {
+.author__urls.social-icons li a[href*=".pdf"]:hover i,
+.footer .author__urls.social-icons li a[href*=".pdf"]:hover i {
   color: #a03229 !important;
 }
 
-.author__urls.social-icons li a[href^="mailto:"]:hover i {
+.author__urls.social-icons li a[href^="mailto:"]:hover i,
+.footer .author__urls.social-icons li a[href^="mailto:"]:hover i {
   color: #8a0e0a !important;
 }
 
