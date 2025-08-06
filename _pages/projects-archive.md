@@ -25,12 +25,12 @@ author_profile: false
   }
 
   ul.projects-list li {
-     display: flex;
-  align-items: center;
-  margin-bottom: 4rem;   /* gap between project blocks */
-  padding: 1rem;         /* inner spacing inside each project block */
-  background-color: #000; /* dark background slightly different from page background */
-  border-radius: 8px; 
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+    padding: 1rem;
+    background-color: #000;
+    border-radius: 8px;
   }
 
   ul.projects-list li.left {
@@ -77,8 +77,20 @@ author_profile: false
     max-width: 600px;
   }
 
-   ul.projects-list li img.large-image {
+  ul.projects-list li img.large-image {
     width: 400px;
+  }
+
+  li.arrow-connector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -2rem 0 2rem;
+  }
+
+  .arrow-svg {
+    width: 150px;
+    height: 30px;
   }
 </style>
 
@@ -98,7 +110,6 @@ author_profile: false
           {% if side == "left" %}
             {% if project.image %}
               <img src="{{ project.image }}" alt="{{ project.title }} image" class="{{ project.custom_image_class }}" />
-
             {% endif %}
           {% endif %}
 
@@ -130,10 +141,27 @@ author_profile: false
           {% if side == "right" %}
             {% if project.image %}
               <img src="{{ project.image }}" alt="{{ project.title }} image" class="{{ project.custom_image_class }}" />
-
             {% endif %}
           {% endif %}
         </li>
+
+        {% if forloop.last == false %}
+          <li class="arrow-connector">
+            <svg class="arrow-svg" viewBox="0 0 100 20" preserveAspectRatio="none">
+              {% if side == "left" %}
+                <path d="M0,10 Q50,0 100,10" stroke="#888" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+              {% else %}
+                <path d="M100,10 Q50,20 0,10" stroke="#888" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+              {% endif %}
+              <defs>
+                <marker id="arrowhead" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+                  <polygon points="0 0, 6 3, 0 6" fill="#888" />
+                </marker>
+              </defs>
+            </svg>
+          </li>
+        {% endif %}
+
       {% endfor %}
     </ul>
   </div>
