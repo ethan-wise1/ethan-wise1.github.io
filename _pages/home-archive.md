@@ -11,23 +11,23 @@ With a foundation in core programming and systems, I enjoy building practical to
 
 ## Featured Projects
 
-- **Hackathon Project X**  
-  Built in 24 hours with a team using ...
-
-- **Number Base Converter**  
-  Lightweight JavaScript tool for translating between binary, hexadecimal, and decimal systems.
-
-- **Server Creation**  
-  Deployed a basic HTTP server from scratch to handle API requests.
-
-- **Fitness App**  
+- **Fitness Tracking App**  
   Mobile-friendly progressive web app for tracking workouts and personal goals.
 
-- **Sumo Wrestling Interface**  
+- **Number Base Converter with Bitwise Logic**  
+  JavaScript tool for translating between binary, hexadecimal, and decimal systems.
+
+- **Hackathon Project**  
+  Developed a CNN-based system to detect unmapped forest roads from LIDAR and elevation data.
+
+- **NoSQL-Powered Tournament Platform**  
   MongoDB-backed dashboard for visualizing sumo tournament data.
 
-- **3D Printed Guitar**  
-  CAD-designed electric guitar body printed and wired with custom electronics.
+- **Rocket Trajectory Tracking**  
+  Designed a Kalman Filter for real-time rocket trajectory estimation.
+
+- **Server Creation**  
+  Implements a bi-directional Java TCP client-server system.
 
 - **This Website**  
   Jekyll-powered personal portfolio built and styled from scratch.
