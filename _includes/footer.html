@@ -33,36 +33,3 @@
     © {{ site.time | date: '%Y' }} Ethan Wise
   </div>
 </footer>
-
-<script>
-function applyMobileHeaderFixes() {
-  // ======================
-  // Author profile button
-  // ======================
-  const authorBtns = document.querySelectorAll(
-    ".author__links .btn--follow, .author__links a"
-  );
-  authorBtns.forEach(btn => {
-    btn.textContent = "Contact Me";
-  });
-
-  // ======================
-  // Move hamburger menu to top-right
-  // ======================
-  const toggle = document.querySelector(".masthead__toggle, .menu-toggle");
-  const masthead = document.querySelector(".masthead");
-  if (toggle && masthead) {
-    masthead.appendChild(toggle); // move toggle out of centered container
-    toggle.style.position = "absolute";
-    toggle.style.top = "10px";
-    toggle.style.right = "10px";
-    toggle.style.margin = "0";
-  }
-}
-
-// Run after DOM + 1 second to ensure dynamically generated elements exist
-if (window.innerWidth <= 450) {
-  setTimeout(applyMobileHeaderFixes, 1000);
-}
-</script>
-
