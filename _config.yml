@@ -204,7 +204,7 @@ sass:
   style: compressed
 
 assets:
-  css: "/assets/css/main.scss"
+  css: "/assets/css/iphone.css"
 
 collections:
   projects:
