@@ -4,21 +4,27 @@
 @media only screen and (max-width: 430px) {
 
     /* Optional test background color */
-    body {
+/*     body {
         background-color: #ffefef;
-    }
+    } */
 
- /* Make the header inner container allow top-right alignment */
-  .masthead__inner {
-    display: flex !important;
-    justify-content: flex-end !important; /* push items to right */
-    align-items: flex-start !important;
+   /* Make masthead relative so we can position toggle */
+  .masthead {
+    position: relative !important;
   }
 
-  /* Optional: adjust spacing from top/right */
+  /* Position the hamburger in the top-right corner */
   .masthead__toggle {
-    margin-top: 5px !important;
-    margin-right: 10px !important;
+    position: absolute !important;
+    top: 10px !important;
+    right: 10px !important;
+    margin: 0 !important;
+  }
+
+  /* Ensure logo and other header items do not interfere */
+  .masthead__inner {
+    justify-content: flex-start !important; /* logo stays left */
+    align-items: center !important;
   }
 
     /* Projects page: stack elements vertically and center */
