@@ -2,45 +2,47 @@
    iPhone-Specific Overrides for Minimal Mistakes
    ===================================== */
 @media only screen 
-  and (max-device-width: 430px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (max-width: 430px) {
 
-    /* Test background color (remove when confirmed working) */
-    body {
+    /* Optional test background color */
+/*     body {
         background-color: #ffefef;
+    } */
+
+    /* Projects page: stack image above text, center everything */
+    ul.projects-list li {
+        display: flex !important;
+        flex-direction: column !important;  /* vertical stacking */
+        align-items: center !important;     /* center image and content */
+        padding: 1rem !important;
+        margin-bottom: 2rem !important;
+        text-align: center !important;
     }
 
-    /* Make list items stack vertically */
-  ul.projects-list li {
-    display: block !important;  /* stack image + content vertically */
-    padding: 1rem !important;
-    margin-bottom: 2rem !important;
-  }
+    ul.projects-list li img {
+        width: 50% !important;          /* half container width */
+        max-width: 200px !important;    /* limit large images */
+        height: auto !important;
+        margin: 0 0 1rem 0 !important;  /* space below image */
+        border-radius: 8px !important;
+        float: none !important;         /* remove previous float */
+    }
 
-  /* Make images smaller and centered */
-  ul.projects-list li img {
-    width: 25% !important;       /* 1/4 of container */
-    max-width: 100% !important;
-    height: auto !important;
-    float: left !important;       /* allow text wrap */
-    margin: 0 1rem 1rem 0 !important;
-  }
+    ul.projects-list li .content {
+        max-width: 90% !important;      /* content below image fills most width */
+        overflow: visible !important;
+    }
 
-  /* Content text wraps properly */
-  ul.projects-list li .content {
-    overflow: hidden !important;
-    max-width: 70%;               /* remaining width for text */
-  }
+    ul.projects-list li .content h2 {
+        font-size: 1.3em !important;
+        margin-bottom: 0.5rem !important;
+    }
 
-  /* Adjust headings and paragraphs */
-  ul.projects-list li .content h2 {
-    font-size: 1.2em !important;
-  }
+    ul.projects-list li .content p {
+        font-size: 0.95em !important;
+        line-height: 1.4em !important;
+    }
 
-  ul.projects-list li .content p {
-    font-size: 0.9em !important;
-    line-height: 1.3em !important;
-  }
     /* Reduce excessive padding on mobile */
     .page__content,
     .page__footer,
@@ -71,15 +73,9 @@
     }
 
     /* Scale down headings slightly */
-    h1 {
-        font-size: 1.8em;
-    }
-    h2 {
-        font-size: 1.4em;
-    }
-    h3 {
-        font-size: 1.2em;
-    }
+    h1 { font-size: 1.8em; }
+    h2 { font-size: 1.4em; }
+    h3 { font-size: 1.2em; }
 
     /* Prevent long URLs or text from overflowing */
     p, li, blockquote, .archive__item-title {
