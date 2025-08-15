@@ -1,72 +1,75 @@
-/* =========================
-   iPhone-specific styles only
-   ========================= */
-
-/* iPhone SE / 5 / 5S / 5C (320px wide) */
+/* =====================================
+   iPhone-Specific Overrides for Minimal Mistakes
+   ===================================== */
 @media only screen 
-  and (device-width: 320px) 
+  and (max-device-width: 430px) 
   and (-webkit-min-device-pixel-ratio: 2) {
-    body {
-        background-color: #ffefef; /* test color */
-    }
-}
 
-/* iPhone 6 / 7 / 8 (375x667) */
-@media only screen 
-  and (device-width: 375px) 
-  and (device-height: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
+    /* Test background color (remove when confirmed working) */
     body {
-        background-color: #e7f0ff; /* test color */
+        background-color: #ffefef;
     }
-}
 
-/* iPhone 6+/7+/8+ (414x736) */
-@media only screen 
-  and (device-width: 414px) 
-  and (device-height: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3) {
-    body {
-        background-color: #f0ffe7; /* test color */
+    /* Reduce excessive padding on mobile */
+    .page__content,
+    .page__footer,
+    .page__meta {
+        padding-left: 10px;
+        padding-right: 10px;
     }
-}
 
-/* iPhone X / XS / 11 Pro (375x812) */
-@media only screen 
-  and (device-width: 375px) 
-  and (device-height: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3) {
-    body {
-        background-color: #fff0f0; /* test color */
+    /* Adjust header spacing */
+    .masthead {
+        padding: 5px 10px;
     }
-}
 
-/* iPhone XR / 11 (414x896) */
-@media only screen 
-  and (device-width: 414px) 
-  and (device-height: 896px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-    body {
-        background-color: #f0faff; /* test color */
+    /* Make nav links fit better */
+    .masthead__menu {
+        font-size: 14px;
     }
-}
 
-/* iPhone 12 / 13 / 14 (390x844) */
-@media only screen 
-  and (device-width: 390px) 
-  and (device-height: 844px) 
-  and (-webkit-min-device-pixel-ratio: 3) {
-    body {
-        background-color: #fafff0; /* test color */
+    .masthead__menu-item {
+        margin: 0 6px;
     }
-}
 
-/* iPhone 12 Pro Max / 13 Pro Max / 14 Plus (428x926) */
-@media only screen 
-  and (device-width: 428px) 
-  and (device-height: 926px) 
-  and (-webkit-min-device-pixel-ratio: 3) {
-    body {
-        background-color: #fffaf0; /* test color */
+    /* Ensure buttons span full width if needed */
+    button, .btn, .btn--primary {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 15px;
+    }
+
+    /* Scale down headings slightly */
+    h1 {
+        font-size: 1.8em;
+    }
+    h2 {
+        font-size: 1.4em;
+    }
+    h3 {
+        font-size: 1.2em;
+    }
+
+    /* Prevent long URLs or text from overflowing */
+    p, li, blockquote, .archive__item-title {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    /* Ensure images never overflow the viewport */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Footer text smaller and centered */
+    .page__footer {
+        font-size: 0.85em;
+        text-align: center;
+    }
+
+    /* Social icons adjust size */
+    .page__footer-social i {
+        font-size: 1.1em;
     }
 }
