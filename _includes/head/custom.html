@@ -1,1 +1,10 @@
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/iphone.css?v=1">
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  if (window.innerWidth <= 430) { // iPhone width
+    const followBtn = document.querySelector(".author__links .btn--follow");
+    if(followBtn) followBtn.textContent = "Contact Me";
+  }
+});
+</script>
