@@ -73,6 +73,27 @@
     z-index: 9999; /* ensure it’s above other elements */
   }
 
+   /* Hide the normal inline nav links */
+  .masthead__menu {
+    display: none !important;
+  }
+
+  /* Show the hidden/greedy nav menu */
+  .hidden-links {
+    display: block !important; /* or flex if needed */
+    position: absolute;        /* so it drops down from the top */
+    top: 50px;                 /* adjust to below hamburger button */
+    right: 10px;               /* align with button */
+    background-color: #000;    /* match your header */
+    border-radius: 8px;
+    padding: 1rem;
+    z-index: 999;
+  }
+
+  .hidden-links li {
+    margin: 0.5rem 0;
+  }
+
     /* Scale down headings slightly */
     h1 {
         font-size: 1.8em;
