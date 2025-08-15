@@ -4,9 +4,17 @@
 @media only screen and (max-width: 430px) {
 
     /* Optional test background color */
-    body {
+/*     body {
         background-color: #ffefef;
-    }
+    } */
+
+   /* Move hamburger menu to top-right */
+  .header-toggle {
+    position: absolute;   /* ensure it doesn’t affect other elements */
+    top: 10px;            /* distance from top of viewport */
+    right: 10px;          /* distance from right of viewport */
+    margin: 0;            /* remove default centering */
+  }
 
     /* Projects page: stack elements vertically and center */
     ul.projects-list li {
