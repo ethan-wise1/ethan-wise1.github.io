@@ -6,9 +6,9 @@
   and (-webkit-min-device-pixel-ratio: 2) {
 
     /* Test background color (remove when confirmed working) */
-    body {
+/*     body {
         background-color: #ffefef;
-    }
+    } */
 
     /* =====================================
        Projects page tweaks
