@@ -1,0 +1,72 @@
+/* =========================
+   iPhone-specific styles only
+   ========================= */
+
+/* iPhone SE / 5 / 5S / 5C (320px wide) */
+@media only screen 
+  and (device-width: 320px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+        background-color: #ffefef; /* test color */
+    }
+}
+
+/* iPhone 6 / 7 / 8 (375x667) */
+@media only screen 
+  and (device-width: 375px) 
+  and (device-height: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+        background-color: #e7f0ff; /* test color */
+    }
+}
+
+/* iPhone 6+/7+/8+ (414x736) */
+@media only screen 
+  and (device-width: 414px) 
+  and (device-height: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) {
+    body {
+        background-color: #f0ffe7; /* test color */
+    }
+}
+
+/* iPhone X / XS / 11 Pro (375x812) */
+@media only screen 
+  and (device-width: 375px) 
+  and (device-height: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) {
+    body {
+        background-color: #fff0f0; /* test color */
+    }
+}
+
+/* iPhone XR / 11 (414x896) */
+@media only screen 
+  and (device-width: 414px) 
+  and (device-height: 896px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+        background-color: #f0faff; /* test color */
+    }
+}
+
+/* iPhone 12 / 13 / 14 (390x844) */
+@media only screen 
+  and (device-width: 390px) 
+  and (device-height: 844px) 
+  and (-webkit-min-device-pixel-ratio: 3) {
+    body {
+        background-color: #fafff0; /* test color */
+    }
+}
+
+/* iPhone 12 Pro Max / 13 Pro Max / 14 Plus (428x926) */
+@media only screen 
+  and (device-width: 428px) 
+  and (device-height: 926px) 
+  and (-webkit-min-device-pixel-ratio: 3) {
+    body {
+        background-color: #fffaf0; /* test color */
+    }
+}
