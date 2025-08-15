@@ -6,9 +6,9 @@
   and (-webkit-min-device-pixel-ratio: 2) {
 
     /* Test background color (remove when confirmed working) */
-    body {
+/*     body {
         background-color: #ffefef;
-    }
+    } */
 
     /* =====================================
        Projects page tweaks
@@ -61,23 +61,17 @@
        Header & nav tweaks
        ===================================== */
     .masthead {
-        padding: 5px 10px;
-        position: relative; /* allow absolute positioning of toggle */
-    }
+    position: relative;
+  }
 
-    .masthead__menu {
-        font-size: 14px;
-    }
-
-    .masthead__menu-item {
-        margin: 0 6px;
-    }
-
-    button, .btn, .btn--primary {
-        width: 100%;
-        box-sizing: border-box;
-        font-size: 15px;
-    }
+  /* Move the hamburger toggle button */
+  .greedy-nav__toggle {
+    position: absolute !important;
+    top: 10px !important;
+    right: 10px !important;
+    margin: 0 !important;
+    z-index: 9999; /* ensure it’s above other elements */
+  }
 
     /* Scale down headings slightly */
     h1 {
