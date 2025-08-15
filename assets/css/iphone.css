@@ -6,9 +6,9 @@
   and (-webkit-min-device-pixel-ratio: 2) {
 
     /* Test background color (remove when confirmed working) */
-/*     body {
+    body {
         background-color: #ffefef;
-    } */
+    }
 
     /* =====================================
        Projects page tweaks
@@ -61,7 +61,7 @@
        Header & nav tweaks
        ===================================== */
     /* Move hamburger button to top-right */
-/*  .masthead__inner {
+ .masthead__inner {
     position: relative;
   }
 
@@ -70,7 +70,7 @@
     top: 10px;
     right: 10px;
     z-index: 999;
-  } */
+  }
 
    /* Make nav links fit better */
     .masthead__menu {
