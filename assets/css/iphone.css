@@ -6,9 +6,9 @@
   and (-webkit-min-device-pixel-ratio: 2) {
 
     /* Test background color (remove when confirmed working) */
-/*     body {
+    body {
         background-color: #ffefef;
-    } */
+    }
 
     /* =====================================
        Projects page tweaks
@@ -68,7 +68,7 @@
   .greedy-nav__toggle {
     position: absolute;
     top: 10px;
-    right: 90px;
+    left: 90px;
     z-index: 999;
   }
 
