@@ -1,13 +1,16 @@
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/iphone.css?v=1">
 
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-  if (window.innerWidth <= 430) { // iPhone width
-
-    // Change Follow to Contact Me
+if (window.innerWidth <= 430) { // iPhone width
+  function updateAuthorButton() {
     const authorBtn = document.querySelector(".author__urls-wrapper .btn.open");
-    if(authorBtn) authorBtn.textContent = "Contact Me";
-
+    if (authorBtn) {
+      authorBtn.textContent = "Contact Me";
+    } else {
+      // Retry in 100ms until button exists
+      setTimeout(updateAuthorButton, 100);
+    }
   }
-});
+  updateAuthorButton();
+}
 </script>
