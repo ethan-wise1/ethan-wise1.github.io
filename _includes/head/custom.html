@@ -1,1 +1,13 @@
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/iphone.css?v=1">
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  if (window.innerWidth <= 430) { // iPhone width
+
+    // Change Follow to Contact Me
+    const authorBtn = document.querySelector(".author__urls-wrapper .btn.open");
+    if(authorBtn) authorBtn.textContent = "Contact Me";
+
+  }
+});
+</script>
