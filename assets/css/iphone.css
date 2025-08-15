@@ -6,9 +6,9 @@
   and (-webkit-min-device-pixel-ratio: 2) {
 
     /* Test background color (remove when confirmed working) */
-    body {
+/*     body {
         background-color: #ffefef;
-    }
+    } */
 
     /* =====================================
        Projects page tweaks
@@ -44,20 +44,6 @@
     }
 
     /* =====================================
-       Author profile tweaks
-       ===================================== */
-    /* Hide the default follow text */
-    .author__links .btn--follow span {
-        display: none !important;
-    }
-
-    /* Add new text using pseudo-element */
-    .author__links .btn--follow::after {
-        content: "Contact Me" !important;
-        display: inline-block !important;
-    }
-
-    /* =====================================
        Header & nav tweaks
        ===================================== */
     /* Move hamburger button to top-right */
@@ -68,7 +54,7 @@
   .greedy-nav__toggle {
     position: absolute;
     top: 10px;
-    left: 90px;
+    left: 120px;
     z-index: 999;
   }
 
