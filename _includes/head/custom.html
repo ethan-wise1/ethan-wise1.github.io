@@ -2,9 +2,44 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-  if (window.innerWidth <= 430) { // iPhone width
+  if (window.innerWidth <= 430) { // mobile/iPhone width
+
+    /* =====================================
+       Author profile button
+       ===================================== */
     const followBtn = document.querySelector(".author__links .btn--follow");
     if(followBtn) followBtn.textContent = "Contact Me";
+
+    /* =====================================
+       Move hamburger menu to top-right
+       ===================================== */
+    const toggle = document.querySelector(".masthead__toggle");
+    const masthead = document.querySelector(".masthead");
+    if(toggle && masthead) {
+      masthead.appendChild(toggle); // detach from centered inner container
+      toggle.style.position = "absolute";
+      toggle.style.top = "10px";
+      toggle.style.right = "10px";
+      toggle.style.margin = "0";
+    }
+
+    /* =====================================
+       Project images repositioning
+       ===================================== */
+    document.querySelectorAll(".projects-list li").forEach(li => {
+      const content = li.querySelector(".content");
+      const img = li.querySelector("img");
+      if(content && img) {
+        // Move image to just before the last <p> (description)
+        const paragraphs = content.querySelectorAll("p");
+        if(paragraphs.length > 0) {
+          content.insertBefore(img, paragraphs[0]);
+        } else {
+          content.appendChild(img); // fallback
+        }
+      }
+    });
+
   }
 });
 </script>
