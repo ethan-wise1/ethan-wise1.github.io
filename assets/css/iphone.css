@@ -61,12 +61,15 @@
        Header & nav tweaks
        ===================================== */
     /* Move hamburger button to top-right */
+ .masthead__inner {
+    position: relative;
+  }
+
   .greedy-nav__toggle {
-    position: absolute !important;
+    position: absolute;
     top: 10px;
-    width: 20px;
     right: 10px;
-    z-index: 9999;
+    z-index: 999;
   }
    
     /* Scale down headings slightly */
