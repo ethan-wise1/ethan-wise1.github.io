@@ -25,12 +25,12 @@ author_profile: false
   }
 
   ul.projects-list li {
-     display: flex;
-  align-items: center;
-  margin-bottom: 4rem;   /* gap between project blocks */
-  padding: 1rem;         /* inner spacing inside each project block */
-  background-color: #000; /* dark background slightly different from page background */
-  border-radius: 8px; 
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+    padding: 1rem;
+    background-color: #000;
+    border-radius: 8px;
   }
 
   ul.projects-list li.left {
@@ -77,7 +77,7 @@ author_profile: false
     max-width: 600px;
   }
 
-   ul.projects-list li img.large-image {
+  ul.projects-list li img.large-image {
     width: 400px;
   }
 </style>
@@ -95,13 +95,6 @@ author_profile: false
         {% assign side = project.image_position | default: default_side %}
 
         <li class="{{ side }}">
-          {% if side == "left" %}
-            {% if project.image %}
-              <img src="{{ project.image }}" alt="{{ project.title }} image" class="{{ project.custom_image_class }}" />
-
-            {% endif %}
-          {% endif %}
-
           <div class="content">
             <h2>
               {% if project.link_url %}
@@ -124,15 +117,12 @@ author_profile: false
                 Video: {{ project.video_label | default: "App Walkthrough" }}</a></p>
             {% endif %}
 
-            <p>{{ project.excerpt }}</p>
-          </div>
-
-          {% if side == "right" %}
             {% if project.image %}
               <img src="{{ project.image }}" alt="{{ project.title }} image" class="{{ project.custom_image_class }}" />
-
             {% endif %}
-          {% endif %}
+
+            <p>{{ project.excerpt }}</p>
+          </div>
         </li>
       {% endfor %}
     </ul>
