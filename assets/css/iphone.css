@@ -6,8 +6,27 @@
   and (-webkit-min-device-pixel-ratio: 2) {
 
     /* Test background color (remove when confirmed working) */
-    body {
+/*     body {
         background-color: #ffefef;
+    } */
+
+   /* Make project images responsive */
+    .projects__item img, 
+    .projects img {
+        width: 100%;       /* never overflow container */
+        max-width: 100%;
+        height: auto;      /* maintain aspect ratio */
+        display: block;
+        margin: 0 auto;    /* center images */
+    }
+
+    /* Optional: reduce margin/padding around project cards */
+    .projects__item {
+        margin-bottom: 15px;
+    }
+
+   .author__links .btn--follow::after {
+        content: "Contact Me";  /* replace "Follow" */
     }
 
     /* Reduce excessive padding on mobile */
