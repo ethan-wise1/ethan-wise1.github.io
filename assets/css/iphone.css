@@ -9,7 +9,7 @@
     } */
 
    /* Move hamburger menu to top-right */
-  .header-toggle {
+  .masthead__toggle {
     position: absolute;   /* ensure it doesn’t affect other elements */
     top: 10px;            /* distance from top of viewport */
     right: 10px;          /* distance from right of viewport */
