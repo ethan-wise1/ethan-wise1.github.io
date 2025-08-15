@@ -1,1 +1,10 @@
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/iphone.css?v=1">
+
+<ul class="masthead__menu">
+  {% for page in site.pages %}
+    <li class="masthead__menu-item">
+      <a href="{{ page.url }}">{{ page.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
