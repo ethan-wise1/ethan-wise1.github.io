@@ -4,16 +4,21 @@
 @media only screen and (max-width: 430px) {
 
     /* Optional test background color */
-/*     body {
+    body {
         background-color: #ffefef;
-    } */
+    }
 
-   /* Move hamburger menu to top-right */
+ /* Make the header inner container allow top-right alignment */
+  .masthead__inner {
+    display: flex !important;
+    justify-content: flex-end !important; /* push items to right */
+    align-items: flex-start !important;
+  }
+
+  /* Optional: adjust spacing from top/right */
   .masthead__toggle {
-    position: absolute;   /* ensure it doesn’t affect other elements */
-    top: 10px;            /* distance from top of viewport */
-    right: 10px;          /* distance from right of viewport */
-    margin: 0;            /* remove default centering */
+    margin-top: 5px !important;
+    margin-right: 10px !important;
   }
 
     /* Projects page: stack elements vertically and center */
