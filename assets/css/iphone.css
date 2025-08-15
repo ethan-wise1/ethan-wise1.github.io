@@ -1,15 +1,14 @@
 /* =====================================
    iPhone-Specific Overrides for Minimal Mistakes
    ===================================== */
-@media only screen 
-  and (max-width: 430px) {
+@media only screen and (max-width: 430px) {
 
     /* Optional test background color */
-/*     body {
+    body {
         background-color: #ffefef;
-    } */
+    }
 
-    /* Projects page: stack image above text, center everything */
+    /* Projects page: stack elements vertically and center */
     ul.projects-list li {
         display: flex !important;
         flex-direction: column !important;  /* vertical stacking */
@@ -19,84 +18,16 @@
         text-align: center !important;
     }
 
-    ul.projects-list li img {
-        width: 50% !important;          /* half container width */
-        max-width: 200px !important;    /* limit large images */
-        height: auto !important;
-        margin: 0 0 1rem 0 !important;  /* space below image */
-        border-radius: 8px !important;
-        float: none !important;         /* remove previous float */
-    }
-
+    /* Set order of elements: title + links first, image second, description last */
     ul.projects-list li .content {
-        max-width: 90% !important;      /* content below image fills most width */
+        order: 1; /* Title + links first */
+        max-width: 90% !important;
         overflow: visible !important;
     }
 
-    ul.projects-list li .content h2 {
-        font-size: 1.3em !important;
-        margin-bottom: 0.5rem !important;
-    }
-
-    ul.projects-list li .content p {
-        font-size: 0.95em !important;
-        line-height: 1.4em !important;
-    }
-
-    /* Reduce excessive padding on mobile */
-    .page__content,
-    .page__footer,
-    .page__meta {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    /* Adjust header spacing */
-    .masthead {
-        padding: 5px 10px;
-    }
-
-    /* Make nav links fit better */
-    .masthead__menu {
-        font-size: 14px;
-    }
-
-    .masthead__menu-item {
-        margin: 0 6px;
-    }
-
-    /* Ensure buttons span full width if needed */
-    button, .btn, .btn--primary {
-        width: 100%;
-        box-sizing: border-box;
-        font-size: 15px;
-    }
-
-    /* Scale down headings slightly */
-    h1 { font-size: 1.8em; }
-    h2 { font-size: 1.4em; }
-    h3 { font-size: 1.2em; }
-
-    /* Prevent long URLs or text from overflowing */
-    p, li, blockquote, .archive__item-title {
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-    }
-
-    /* Ensure images never overflow the viewport */
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    /* Footer text smaller and centered */
-    .page__footer {
-        font-size: 0.85em;
-        text-align: center;
-    }
-
-    /* Social icons adjust size */
-    .page__footer-social i {
-        font-size: 1.1em;
-    }
-}
+    ul.projects-list li img {
+        order: 2; /* Image after title/links, before description text */
+        width: 50% !important;          /* half container width */
+        max-width: 200px !important;    /* limit large images */
+        height: auto !important;
+        margin: 0.5rem 0 !important;
