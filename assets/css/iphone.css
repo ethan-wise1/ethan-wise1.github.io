@@ -71,6 +71,22 @@
     right: 10px;
     z-index: 999;
   } */
+
+   /* Make nav links fit better */
+    .masthead__menu {
+        font-size: 14px;
+    }
+
+    .masthead__menu-item {
+        margin: 0 6px;
+    }
+
+    /* Ensure buttons span full width if needed */
+    button, .btn, .btn--primary {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 15px;
+    }
    
     /* Scale down headings slightly */
     h1 {
