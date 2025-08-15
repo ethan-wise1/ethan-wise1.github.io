@@ -6,26 +6,41 @@
   and (-webkit-min-device-pixel-ratio: 2) {
 
     /* Test background color (remove when confirmed working) */
-/*     body {
+    body {
         background-color: #ffefef;
-    } */
-
-    /* Make project images smaller and float text */
-    .projects img, 
-    .project-thumbnail img, 
-    .projects__item img {
-        width: 25%;       /* 1/4 size */
-        float: left;      /* text wraps around */
-        margin: 0 10px 10px 0;
-        height: auto;
     }
 
-    /* Ensure text wraps properly */
-    .projects__item-content,
-    .project-content {
-        overflow: hidden;   /* contain floated image */
-    }
+    /* Make list items stack vertically */
+  ul.projects-list li {
+    display: block !important;  /* stack image + content vertically */
+    padding: 1rem !important;
+    margin-bottom: 2rem !important;
+  }
 
+  /* Make images smaller and centered */
+  ul.projects-list li img {
+    width: 25% !important;       /* 1/4 of container */
+    max-width: 100% !important;
+    height: auto !important;
+    float: left !important;       /* allow text wrap */
+    margin: 0 1rem 1rem 0 !important;
+  }
+
+  /* Content text wraps properly */
+  ul.projects-list li .content {
+    overflow: hidden !important;
+    max-width: 70%;               /* remaining width for text */
+  }
+
+  /* Adjust headings and paragraphs */
+  ul.projects-list li .content h2 {
+    font-size: 1.2em !important;
+  }
+
+  ul.projects-list li .content p {
+    font-size: 0.9em !important;
+    line-height: 1.3em !important;
+  }
     /* Reduce excessive padding on mobile */
     .page__content,
     .page__footer,
