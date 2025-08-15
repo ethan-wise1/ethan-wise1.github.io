@@ -6,30 +6,24 @@
   and (-webkit-min-device-pixel-ratio: 2) {
 
     /* Test background color (remove when confirmed working) */
-    body {
+/*     body {
         background-color: #ffefef;
-    }
+    } */
 
+    /* Make project images smaller and float text */
+    .projects img, 
+    .project-thumbnail img, 
     .projects__item img {
-        width: 25%;         /* 1/4 of the container */
-        float: left;        /* let text wrap around */
-        margin: 0 10px 10px 0;  /* spacing between image and text */
-        height: auto;       /* maintain aspect ratio */
+        width: 25%;       /* 1/4 size */
+        float: left;      /* text wraps around */
+        margin: 0 10px 10px 0;
+        height: auto;
     }
 
-    .projects__item .projects__item-content {
+    /* Ensure text wraps properly */
+    .projects__item-content,
+    .project-content {
         overflow: hidden;   /* contain floated image */
-    }
-
-   /* Hide the default follow text */
-    .author__links .btn--follow span {
-        display: none;
-    }
-
-    /* Add new text using pseudo-element */
-    .author__links .btn--follow::after {
-        content: "Contact Me";
-        display: inline-block;
     }
 
     /* Reduce excessive padding on mobile */
