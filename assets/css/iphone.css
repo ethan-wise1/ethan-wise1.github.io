@@ -31,3 +31,76 @@
         max-width: 200px !important;    /* limit large images */
         height: auto !important;
         margin: 0.5rem 0 !important;
+        border-radius: 8px !important;
+        float: none !important;         /* remove previous float */
+    }
+
+    ul.projects-list li .content p {
+        order: 3; /* description text after image */
+        font-size: 0.95em !important;
+        line-height: 1.4em !important;
+        margin-top: 0.5rem !important;
+    }
+
+    ul.projects-list li .content h2 {
+        font-size: 1.3em !important;
+        margin-bottom: 0.5rem !important;
+    }
+
+    /* Reduce excessive padding on mobile */
+    .page__content,
+    .page__footer,
+    .page__meta {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /* Adjust header spacing */
+    .masthead {
+        padding: 5px 10px;
+    }
+
+    /* Make nav links fit better */
+    .masthead__menu {
+        font-size: 14px;
+    }
+
+    .masthead__menu-item {
+        margin: 0 6px;
+    }
+
+    /* Ensure buttons span full width if needed */
+    button, .btn, .btn--primary {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 15px;
+    }
+
+    /* Scale down headings slightly */
+    h1 { font-size: 1.8em; }
+    h2 { font-size: 1.4em; }
+    h3 { font-size: 1.2em; }
+
+    /* Prevent long URLs or text from overflowing */
+    p, li, blockquote, .archive__item-title {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    /* Ensure images never overflow the viewport */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Footer text smaller and centered */
+    .page__footer {
+        font-size: 0.85em;
+        text-align: center;
+    }
+
+    /* Social icons adjust size */
+    .page__footer-social i {
+        font-size: 1.1em;
+    }
+}
