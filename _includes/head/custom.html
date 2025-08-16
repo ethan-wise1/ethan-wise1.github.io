@@ -21,24 +21,20 @@
 </style>
 
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-  // Poll every 100ms until the button exists
-  const interval = setInterval(() => {
-    const authorBtn = document.querySelector(".author__urls-wrapper .btn.open");
-    if (authorBtn) {
-      authorBtn.textContent = "Contact Me"; // Replace text
+window.onload = function() {
+  const authorBtn = document.querySelector(".author__urls-wrapper .btn.open");
+  if (authorBtn) {
+    authorBtn.textContent = "Contact Me"; // Replace text
 
-      // Click once immediately
+    // First click right after load
+    authorBtn.click();
+
+    // Second click slightly later so it's registered
+    setTimeout(() => {
       authorBtn.click();
-
-      // Click again after a short delay (e.g., 200ms)
-      setTimeout(() => {
-        authorBtn.click();
-      }, 200);
-
-      clearInterval(interval); // Stop polling once done
-    }
-  }, 100);
-});
+    }, 300);
+  }
+};
 </script>
+
 
