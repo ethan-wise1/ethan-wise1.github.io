@@ -21,17 +21,13 @@
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   const authorBtn = document.querySelector(".author__urls-wrapper .btn.open");
-  if (authorBtn) {
-    // Set the button text
+  if(authorBtn) {
     authorBtn.textContent = "Contact Me";
-
-    // Click the button twice
-    authorBtn.click(); // first click
-    setTimeout(() => {
-      authorBtn.click(); // second click
-    }, 100); // 100ms delay to allow the menu JS to respond
+    // Auto-click once to open the menu
+    authorBtn.click();
   }
 });
 </script>
+
 
 
