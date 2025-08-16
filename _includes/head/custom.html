@@ -22,20 +22,14 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-  function setContactMe() {
-    const authorBtn = document.querySelector(".author__urls-wrapper .btn.open");
-    if (authorBtn) {
-      authorBtn.textContent = "Contact Me";
-    }
-  }
-
-  // Run every 100ms until the button exists
+  // Poll every 100ms until the button exists
   const interval = setInterval(() => {
     const authorBtn = document.querySelector(".author__urls-wrapper .btn.open");
     if (authorBtn) {
-      setContactMe();
-      clearInterval(interval);
+      authorBtn.textContent = "Contact Me"; // Replace text
+      clearInterval(interval);              // Stop polling once done
     }
   }, 100);
 });
 </script>
+
