@@ -21,20 +21,28 @@
 </style>
 
 <script>
-window.onload = function() {
+function fixAuthorButton() {
   const authorBtn = document.querySelector(".author__urls-wrapper .btn.open");
-  if (authorBtn) {
-    authorBtn.textContent = "Contact Me"; // Replace text
-
-    // First click right after load
-    authorBtn.click();
-
-    // Second click slightly later so it's registered
-    setTimeout(() => {
-      authorBtn.click();
-    }, 300);
+  if (authorBtn && authorBtn.textContent.trim() !== "Contact Me") {
+    authorBtn.textContent = "Contact Me";
   }
-};
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Run once at DOM ready
+  fixAuthorButton();
+
+  // Run again after everything is loaded (theme scripts done)
+  window.addEventListener("load", function() {
+    fixAuthorButton();
+  });
+
+  // Run again whenever user clicks the button (in case theme resets it)
+  document.addEventListener("click", function() {
+    fixAuthorButton();
+  });
+});
 </script>
+
 
 
