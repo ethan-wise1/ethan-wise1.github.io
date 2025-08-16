@@ -21,27 +21,29 @@
 </style>
 
 <script>
-function updateAuthorButton() {
+function setAuthorButtonText() {
     const authorBtn = document.querySelector(".author__urls-wrapper .btn.btn--inverse.open");
     if(authorBtn) {
-        // Update the text immediately
         authorBtn.textContent = "Contact Me";
 
-        // Ensure it stays updated when clicked (because theme may toggle it)
+        // Also fix text after any click/toggle
         authorBtn.addEventListener("click", () => {
             setTimeout(() => {
                 authorBtn.textContent = "Contact Me";
-            }, 10); // small delay to let theme JS run first
+            }, 10);
         });
-        return true; // success
+
+        return true;
     }
-    return false; // button not yet in DOM
+    return false;
 }
 
-// Poll until the button exists
-const intervalId = setInterval(() => {
-    if(updateAuthorButton()) {
-        clearInterval(intervalId); // stop polling once button is updated
-    }
-}, 50);
+// Wait a bit before polling to let Minimal Mistakes JS build the button
+setTimeout(() => {
+    const intervalId = setInterval(() => {
+        if(setAuthorButtonText()) {
+            clearInterval(intervalId);
+        }
+    }, 50);
+}, 300); // 300ms delay before polling
 </script>
