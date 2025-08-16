@@ -18,15 +18,20 @@
 .author__urls li a:hover i {
     opacity: 0.8;
 }
+
+    
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-  const authorBtn = document.querySelector(".author__urls-wrapper .btn.open");
-  if(authorBtn) {
-    authorBtn.textContent = "Contact Me";
-    /*authorBtn.click();*/
-  }
+  const interval = setInterval(() => {
+    const authorBtn = document.querySelector(".author__urls-wrapper .btn.open");
+    if (authorBtn) {
+      authorBtn.textContent = "Contact Me"; // Replace “Follow” immediately
+      clearInterval(interval);              // Stop polling once done
+    }
+  }, 50); // Check every 50ms for fast replacement
 });
 </script>
+
 
 
 
