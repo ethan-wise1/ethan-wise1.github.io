@@ -21,22 +21,25 @@
 </style>
 
 <script>
-function updateAuthorButton() {
-    const authorBtn = document.querySelector(".author__urls-wrapper button.btn.btn--inverse.open");
-    if(authorBtn && authorBtn.textContent.trim() === "Follow") {
+// Function to set the author button text
+function setAuthorButtonText() {
+    const authorBtn = document.querySelector(".author__urls-wrapper .btn.btn--inverse.open");
+    if(authorBtn) {
         authorBtn.textContent = "Contact Me";
-        return true; // done
     }
-    return false; // not yet found
 }
 
-// Try immediately, and then poll every 100ms until it exists (max 2 seconds)
-let attempts = 0;
-const interval = setInterval(function() {
-    if(updateAuthorButton() || attempts > 20) { // 20*100ms = 2 seconds max
-        clearInterval(interval);
-    }
-    attempts++;
-}, 100);
+// Use a MutationObserver to watch for changes in the wrapper
+const wrapper = document.querySelector(".author__urls-wrapper");
+if(wrapper) {
+    // Immediately set text if already present
+    setAuthorButtonText();
+
+    // Observe for any DOM changes (Minimal Mistakes may re-render the button)
+    const observer = new MutationObserver(() => {
+        setAuthorButtonText();
+    });
+    observer.observe(wrapper, { childList: true, subtree: true });
+}
 </script>
 
