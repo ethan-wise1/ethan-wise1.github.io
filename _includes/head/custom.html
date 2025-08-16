@@ -22,18 +22,20 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-    const observer = new MutationObserver(() => {
-        const authorBtn = document.querySelector(".author__urls-wrapper .btn.open");
-        if (authorBtn && authorBtn.textContent !== "Contact Me") {
-            authorBtn.textContent = "Contact Me";
-        }
-    });
-
-    // Observe the whole document body for additions/removals
-    observer.observe(document.body, { childList: true, subtree: true });
-
-    // Immediate check in case it already exists
+  function setContactMe() {
     const authorBtn = document.querySelector(".author__urls-wrapper .btn.open");
-    if (authorBtn) authorBtn.textContent = "Contact Me";
+    if (authorBtn) {
+      authorBtn.textContent = "Contact Me";
+    }
+  }
+
+  // Run every 100ms until the button exists
+  const interval = setInterval(() => {
+    const authorBtn = document.querySelector(".author__urls-wrapper .btn.open");
+    if (authorBtn) {
+      setContactMe();
+      clearInterval(interval);
+    }
+  }, 100);
 });
 </script>
