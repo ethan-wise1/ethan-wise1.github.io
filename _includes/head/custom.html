@@ -21,25 +21,27 @@
 </style>
 
 <script>
-// Function to set the author button text
-function setAuthorButtonText() {
+function updateAuthorButton() {
     const authorBtn = document.querySelector(".author__urls-wrapper .btn.btn--inverse.open");
     if(authorBtn) {
+        // Update the text immediately
         authorBtn.textContent = "Contact Me";
+
+        // Ensure it stays updated when clicked (because theme may toggle it)
+        authorBtn.addEventListener("click", () => {
+            setTimeout(() => {
+                authorBtn.textContent = "Contact Me";
+            }, 10); // small delay to let theme JS run first
+        });
+        return true; // success
     }
+    return false; // button not yet in DOM
 }
 
-// Use a MutationObserver to watch for changes in the wrapper
-const wrapper = document.querySelector(".author__urls-wrapper");
-if(wrapper) {
-    // Immediately set text if already present
-    setAuthorButtonText();
-
-    // Observe for any DOM changes (Minimal Mistakes may re-render the button)
-    const observer = new MutationObserver(() => {
-        setAuthorButtonText();
-    });
-    observer.observe(wrapper, { childList: true, subtree: true });
-}
+// Poll until the button exists
+const intervalId = setInterval(() => {
+    if(updateAuthorButton()) {
+        clearInterval(intervalId); // stop polling once button is updated
+    }
+}, 50);
 </script>
-
