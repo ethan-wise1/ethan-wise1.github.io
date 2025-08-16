@@ -21,29 +21,24 @@
 </style>
 
 <script>
-function setAuthorButtonText() {
-    const authorBtn = document.querySelector(".author__urls-wrapper .btn.btn--inverse.open");
-    if(authorBtn) {
-        authorBtn.textContent = "Contact Me";
+document.addEventListener("DOMContentLoaded", function() {
+    // Target the parent wrapper that contains the author button
+    const wrapper = document.querySelector(".author__urls-wrapper");
+    if (!wrapper) return;
 
-        // Also fix text after any click/toggle
-        authorBtn.addEventListener("click", () => {
-            setTimeout(() => {
-                authorBtn.textContent = "Contact Me";
-            }, 10);
-        });
-
-        return true;
-    }
-    return false;
-}
-
-// Wait a bit before polling to let Minimal Mistakes JS build the button
-setTimeout(() => {
-    const intervalId = setInterval(() => {
-        if(setAuthorButtonText()) {
-            clearInterval(intervalId);
+    // Create a MutationObserver to watch for changes in the wrapper
+    const observer = new MutationObserver(() => {
+        const authorBtn = wrapper.querySelector(".btn.btn--inverse.open");
+        if (authorBtn && authorBtn.textContent !== "Contact Me") {
+            authorBtn.textContent = "Contact Me";
         }
-    }, 1000);
-}, 100); // 300ms delay before polling
+    });
+
+    // Observe child changes (the button is usually added dynamically)
+    observer.observe(wrapper, { childList: true, subtree: true });
+
+    // Optionally, do an immediate check in case the button already exists
+    const authorBtn = wrapper.querySelector(".btn.btn--inverse.open");
+    if (authorBtn) authorBtn.textContent = "Contact Me";
+});
 </script>
