@@ -18,20 +18,17 @@
 .author__urls li a:hover i {
     opacity: 0.8;
 }
+</style>
 
-    
 <script>
 document.addEventListener("DOMContentLoaded", function() {
+  // Poll every 100ms until the button exists
   const interval = setInterval(() => {
     const authorBtn = document.querySelector(".author__urls-wrapper .btn.open");
     if (authorBtn) {
-      authorBtn.textContent = "Contact Me"; // Replace “Follow” immediately
+      authorBtn.textContent = "Contact Me"; // Replace text
       clearInterval(interval);              // Stop polling once done
     }
-  }, 50); // Check every 50ms for fast replacement
+  }, 100);
 });
 </script>
-
-
-
-
