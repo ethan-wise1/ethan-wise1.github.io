@@ -27,8 +27,18 @@ document.addEventListener("DOMContentLoaded", function() {
     const authorBtn = document.querySelector(".author__urls-wrapper .btn.open");
     if (authorBtn) {
       authorBtn.textContent = "Contact Me"; // Replace text
-      clearInterval(interval);              // Stop polling once done
+
+      // Click once immediately
+      authorBtn.click();
+
+      // Click again after a short delay (e.g., 200ms)
+      setTimeout(() => {
+        authorBtn.click();
+      }, 200);
+
+      clearInterval(interval); // Stop polling once done
     }
   }, 100);
 });
 </script>
+
