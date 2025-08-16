@@ -22,23 +22,18 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-    // Target the parent wrapper that contains the author button
-    const wrapper = document.querySelector(".author__urls-wrapper");
-    if (!wrapper) return;
-
-    // Create a MutationObserver to watch for changes in the wrapper
     const observer = new MutationObserver(() => {
-        const authorBtn = wrapper.querySelector(".btn.btn--inverse.open");
+        const authorBtn = document.querySelector(".author__urls-wrapper .btn.open");
         if (authorBtn && authorBtn.textContent !== "Contact Me") {
             authorBtn.textContent = "Contact Me";
         }
     });
 
-    // Observe child changes (the button is usually added dynamically)
-    observer.observe(wrapper, { childList: true, subtree: true });
+    // Observe the whole document body for additions/removals
+    observer.observe(document.body, { childList: true, subtree: true });
 
-    // Optionally, do an immediate check in case the button already exists
-    const authorBtn = wrapper.querySelector(".btn.btn--inverse.open");
+    // Immediate check in case it already exists
+    const authorBtn = document.querySelector(".author__urls-wrapper .btn.open");
     if (authorBtn) authorBtn.textContent = "Contact Me";
 });
 </script>
