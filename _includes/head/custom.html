@@ -22,7 +22,8 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-    const authorBtn = document.querySelector(".author__urls-wrapper .btn.open");
+    // Select the author button with the correct classes
+    const authorBtn = document.querySelector(".author__urls-wrapper .btn.btn--inverse.open");
     if(authorBtn) {
         authorBtn.textContent = "Contact Me";
     }
