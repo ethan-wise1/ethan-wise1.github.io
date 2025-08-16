@@ -47,7 +47,7 @@
        Header & nav tweaks
        ===================================== */
     /* Move hamburger button to top-right */
- .masthead__inner {
+/*  .masthead__inner {
     position: relative;
   }
 
@@ -57,7 +57,7 @@
     left: 120px;
     z-index: 999;
   }
-
+ */
    /* Make nav links fit better */
     .masthead__menu {
         font-size: 14px;
