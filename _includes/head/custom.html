@@ -7,11 +7,11 @@
 }
 
 .author__urls li a i.fas.fa-file-alt {
-    color: #ff6f00; /* Resume orange */
+    color: #d44638; /* Resume red */
 }
 
 .author__urls li a i.fas.fa-envelope {
-    color: #d44638; /* Gmail red */
+    color: #ff6f00; /* Gmail orange */
 }
 
 /* Optional hover effect */
@@ -22,10 +22,10 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-  if (window.innerWidth <= 430) { // mobile/iPhone width
     const authorBtn = document.querySelector(".author__urls-wrapper .btn.open");
-    if(authorBtn) authorBtn.textContent = "Contact Me";
-  }
+    if(authorBtn) {
+        authorBtn.textContent = "Contact Me";
+    }
 });
 </script>
 
