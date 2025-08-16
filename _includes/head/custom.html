@@ -18,18 +18,20 @@
 .author__urls li a:hover i {
     opacity: 0.8;
 }
-</style>
-
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-  // Poll every 100ms until the button exists
   const interval = setInterval(() => {
     const authorBtn = document.querySelector(".author__urls-wrapper .btn.open");
     if (authorBtn) {
-      authorBtn.textContent = "Contact Me"; // Replace text
-      clearInterval(interval);              // Stop polling once done
+      // Set the button text
+      authorBtn.textContent = "Contact Me";
+
+      // "Click" the button to open the links automatically
+      authorBtn.click();
+
+      clearInterval(interval);
     }
-  }, 100);
+  }, 50); // Check every 50ms until button exists
 });
 </script>
 
