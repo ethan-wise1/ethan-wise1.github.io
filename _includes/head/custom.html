@@ -1,26 +1,2 @@
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/iphone.css?v=1">
 
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  if (window.innerWidth <= 430) {
-
-    // ---- Author button: Follow → Contact Me ----
-    setTimeout(() => {
-      const authorBtn = document.querySelector(".author__urls-wrapper .btn.open");
-      if(authorBtn) authorBtn.textContent = "Contact Me";
-    }, 100);
-
-    // ---- Hamburger menu top-right ----
-    const toggle = document.querySelector(".greedy-nav__toggle");
-    const mastheadInner = document.querySelector(".masthead__inner");
-    if(toggle && mastheadInner) {
-      toggle.style.position = "absolute";
-      toggle.style.top = "10px";
-      toggle.style.right = "10px";
-      toggle.style.margin = "0";
-      toggle.style.zIndex = "9999";
-    }
-
-  }
-});
-</script>
