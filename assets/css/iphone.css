@@ -6,9 +6,26 @@
   and (-webkit-min-device-pixel-ratio: 2) {
 
     /* Test background color (remove when confirmed working) */
-/*     body {
+    body {
         background-color: #ffefef;
-    } */
+    }
+
+    /* Author icons colors */
+  .author__urls li a i.fab.fa-linkedin {
+      color: #0077B5; /* LinkedIn blue */
+  }
+
+  .author__urls li a i.fas.fa-file-alt {
+      color: #ff6f00; /* Resume orange */
+  }
+
+  .author__urls li a i.fas.fa-envelope {
+      color: #d44638; /* Gmail red */
+  }
+
+  .author__urls li a:hover i {
+      opacity: 0.8; /* optional hover effect */
+  }
 
     /* =====================================
        Projects page tweaks
