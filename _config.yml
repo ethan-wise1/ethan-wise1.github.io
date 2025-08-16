@@ -61,7 +61,7 @@ author:
       url: "https://www.linkedin.com/in/ethan-wise"
     - label: "Resume"
       icon: "fas fa-fw fa-file-alt"
-      url: "/assets/My%20Resume.pdf"
+      url: "/assets/Website%20Resume.pdf"
     - label: "Email: ethanwise7@gmail"
       icon: "fas fa-fw fa-envelope"
       url: "mailto:ethanwise7@gmail.com"
