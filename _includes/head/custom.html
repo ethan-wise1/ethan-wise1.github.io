@@ -23,26 +23,21 @@
 <script>
 function fixAuthorButton() {
   const authorBtn = document.querySelector(".author__urls-wrapper .btn.open");
-  if (authorBtn && authorBtn.textContent.trim() !== "Contact Me") {
+  if (authorBtn) {
     authorBtn.textContent = "Contact Me";
   }
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-  // Run once at DOM ready
+  // Try immediately
   fixAuthorButton();
 
-  // Run again after everything is loaded (theme scripts done)
-  window.addEventListener("load", function() {
-    fixAuthorButton();
-  });
+  // Try again after 300ms (after theme init)
+  setTimeout(fixAuthorButton, 300);
 
-  // Run again whenever user clicks the button (in case theme resets it)
-  document.addEventListener("click", function() {
+  // Try again after full page load
+  window.addEventListener("load", function() {
     fixAuthorButton();
   });
 });
 </script>
-
-
-
