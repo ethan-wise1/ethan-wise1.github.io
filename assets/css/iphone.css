@@ -43,6 +43,13 @@
         line-height: 1.3em !important;
     }
 
+   /* Make the "Contact Me" button smaller */
+.author__urls-wrapper .btn {
+  font-size: 0.85rem;   /* smaller text */
+  padding: 4px 10px;    /* tighter padding */
+  border-radius: 6px;   /* softer rounded edges */
+}
+
     /* =====================================
        Header & nav tweaks
        ===================================== */
