@@ -2,8 +2,7 @@
    iPhone-Specific Overrides for Minimal Mistakes
    ===================================== */
 @media only screen 
-  and (max-width: 430px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (max-width: 600px) {
 
     /* Test background color (remove when confirmed working) */
 /*     body {
