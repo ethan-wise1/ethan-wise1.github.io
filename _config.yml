@@ -53,7 +53,7 @@ plugins:
 
 author:
   name   : "Ethan Wise"
-  avatar : "/assets/images/bio-photo.jpg"
+  avatar : "/assets/images/Website_Profile.jpg"
   bio    : "Aspiring technologist passionate about building full-stack applications and diving deeper into AI and cybersecurity."
   links:
     - label: "LinkedIn"
